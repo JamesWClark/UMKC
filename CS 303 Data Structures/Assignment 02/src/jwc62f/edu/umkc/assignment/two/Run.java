@@ -4,13 +4,31 @@ import java.io.*;
 import java.util.Vector;
 
 public class Run {
+	private static Vector<Integer> numbers_nearlysorted = null;
+	private static Vector<Integer> numbers_reverse = null;
+	private static Vector<Integer> numbers_random = null;
 
 	public static void main(String[] args) {
+		try {
+			numbers_nearlysorted = GetVectorCSV("1000integers_nearlysorted.csv");
+			numbers_reverse = GetVectorCSV("1000integers_reverse.csv");
+			numbers_random = GetVectorCSV("1000integers_random.csv");
+			System.out.println("selection sort vs nearly sorted data:  " + Sort.Selection(numbers_nearlysorted) + " milliseconds");
+			System.out.println("selection sort vs reverse sorted data: " + Sort.Selection(numbers_reverse) + " milliseconds");
+			System.out.println("selection sort vs random sorted data:  " + Sort.Selection(numbers_random) + " milliseconds");
+		} catch(IOException e) {
+			
+		} finally {
+			Util_Print(numbers_reverse);
+		}
+	}
+	private static void Util_Print(Vector<Integer> v) {
+		for(int i = 0; i < v.size(); i++) {
+			System.out.println(v.get(i));
+		}
+	}
+	public static void SortCountTime() {
 		System.out.println("Going!");
-		
-		Vector<Integer> numbers_nearlysorted = null;
-		Vector<Integer> numbers_reverse = null;
-		Vector<Integer> numbers_random = null;
 		
 		for(int i = 0; i < 3; i++) {
 			try {
