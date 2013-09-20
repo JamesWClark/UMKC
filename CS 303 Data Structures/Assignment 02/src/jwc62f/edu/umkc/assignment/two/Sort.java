@@ -87,9 +87,83 @@ public class Sort {
 
 		 */
 	}
-	public static void Quick() {
+	public static long Quick(Vector<Integer> v, int first, int last) {
+		long start = Calendar.getInstance().getTimeInMillis();
+		if(last - first > 1) {
+			int pivot = Util_Partition(v, first, last);
+			Quick(v, first, pivot);
+			Quick(v, pivot+1, last);
+		}
+		long finish = Calendar.getInstance().getTimeInMillis();
+		return (finish - start);
+		/*
+		 void quick_sort(RI first, RI last) {
+			if (last - first > 1) {  // There is data to be sorted.
+			// Partition the table.
+			RI pivot = partition(first, last);
+			// Sort the left half.
+			KW::quick_sort(first, pivot);
+			// Sort the right half.
+			KW::quick_sort(pivot + 1, last);
+			}
+			}
+			// Insert partition function. See Listing 10.10
+			...
+			} // End namespace KW
+
+ 
+		 */
+	}
+	private static int Util_Partition(Vector<Integer> v, int first, int last) {
+		int up = first + 1;
+		int down = last - 1;
+		do {
+			while((up != last - 1) && !(first < up)) {
+				++up;
+			}
+			while(first < down) {
+				--down;
+			}
+			if(up < down) { 
+				Collections.swap(v, up, down);
+			}
+		} while (up < down);
+		
+		Collections.swap(v, first, down);
+		return down;
 		
 	}
+		/*
+		 template<typename RI>
+			RI partition(RI first, RI last) {
+			// Start up and down at either end of the sequence.
+			// The first table element is the pivot value.
+			RI up = first + 1;
+			RI down = last - 1;
+			do {
+			
+				while ((up != last - 1) && !(*first < *up)) {
+				++up;
+				}
+				// Assert: up equals last-1 or table[up] > table[first].
+				while (*first < *down) {
+				--down;
+				}
+				// Assert: down equals first or table[down] <= table[first].
+				if (up < down) {   // if up is to the left of down,
+				// Exchange table[up] and table[down].
+				std::iter_swap(up, down);
+				}
+			} while (up < down); // Repeat while up is left of down.
+			
+			// Exchange table[first] and table[down] thus putting the
+			// pivot value where it belongs.
+			// Return position of pivot.
+			std::iter_swap(first, down);
+			return down;
+			}
+		 */
+
 	/*
 
 		template<typename RI>

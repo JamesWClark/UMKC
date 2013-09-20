@@ -15,11 +15,11 @@ public class Run {
 			numbers_random = GetVectorCSV("1000integers_random.csv");
 			System.out.println("selection sort vs nearly sorted data:  " + Sort.Selection(numbers_nearlysorted) + " milliseconds");
 			System.out.println("selection sort vs reverse sorted data: " + Sort.Selection(numbers_reverse) + " milliseconds");
-			System.out.println("selection sort vs random sorted data:  " + Sort.Selection(numbers_random) + " milliseconds");
+			System.out.println("selection sort vs random sorted data:  " + Sort.Quick(numbers_random, 0, (numbers_random.size() - 1)) + " milliseconds");
 		} catch(IOException e) {
 			
 		} finally {
-			Util_Print(numbers_reverse);
+			Util_Print(numbers_random);
 		}
 	}
 	private static void Util_Print(Vector<Integer> v) {
