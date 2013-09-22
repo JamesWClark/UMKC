@@ -8,6 +8,12 @@ import java.util.Collections;
 import java.util.Calendar;
 import java.util.Vector;
 
+/**
+ * 
+ * this comment
+ * @author JWC
+ *
+ */
 public class Sort {
 	
 	public static long Bubble(Vector<Integer> v) {
@@ -55,7 +61,8 @@ public class Sort {
 		long finish = Calendar.getInstance().getTimeInMillis();
 		return (finish - start);
 	}
-	public static void Shell(Vector<Integer> v) {
+	public static long Shell(Vector<Integer> v) {
+		long start = Calendar.getInstance().getTimeInMillis();
 		int first = 0;
 		int last = v.size() - 1;
 		int gap = (last - first) / 2; //what about 9/2 ? integers round where? this is 4, right?
@@ -69,113 +76,49 @@ public class Sort {
 				gap = (int)(gap / 2.2);
 			}
 		}
-		/*
-		 void shell_sort(RI first, RI last) {
-		// Set initial gap between adjacent elements.
-		int gap = (last - first) / 2;
-		while (gap > 0) {
-		for (RI next_pos = first + gap;	next_pos != last; ++next_pos) {
-			// Insert element at next_pos in its subarray.
-			KW::insert(first, next_pos, gap);
-		}  // End for.
-		// Reset gap for next pass.
-		if (gap == 2) {
-		gap = 1;
-		} else {
-		gap = int(gap / 2.2);
-		}
-
-		 */
+		long finish = Calendar.getInstance().getTimeInMillis();
+		return (finish - start);
 	}
-	public static long Quick(Vector<Integer> v, int first, int last) {
+	//select a pivot
+	//lesser values left
+	//greater values right
+	//recursively repeat on sub-arrays
+		//left-side: set pivot at position 0
+		//everything right of new pivot becomes new subarray
+		//this continues until only single elements are on the right and left of a pivot - that means they are sorted
+	public static long Quick(Vector<Integer> v, int from_index, int to_index) {
 		long start = Calendar.getInstance().getTimeInMillis();
-		if(last - first > 1) {
-			int pivot = Util_Partition(v, first, last);
-			Quick(v, first, pivot);
-			Quick(v, pivot+1, last);
+		if(to_index - from_index > 1) {
+			int pivot_index = Util_Partition(v, from_index, to_index);
+			Quick(v, from_index, pivot_index);
+			Quick(v, pivot_index + 1, to_index);
 		}
 		long finish = Calendar.getInstance().getTimeInMillis();
 		return (finish - start);
-		/*
-		 void quick_sort(RI first, RI last) {
-			if (last - first > 1) {  // There is data to be sorted.
-			// Partition the table.
-			RI pivot = partition(first, last);
-			// Sort the left half.
-			KW::quick_sort(first, pivot);
-			// Sort the right half.
-			KW::quick_sort(pivot + 1, last);
-			}
-			}
-			// Insert partition function. See Listing 10.10
-			...
-			} // End namespace KW
-
- 
-		 */
 	}
+	//select the pivot (can be any element)
+	//find first value at left side > than pivot
+	//find first value at right side <= pivot
+	//exchange both, repeat search
 	private static int Util_Partition(Vector<Integer> v, int first, int last) {
-		int up = first + 1;
-		int down = last - 1;
+		int up_index = first + 1;
+		int down_index = last - 1;
 		do {
-			while((up != last - 1) && !(first < up)) {
-				++up;
+			while((up_index != down_index) && !(v.get(first) < v.get(up_index))) {
+				++up_index;
 			}
-			while(first < down) {
-				--down;
+			while(v.get(first) < v.get(down_index)) {
+				--down_index;
 			}
-			if(up < down) { 
-				Collections.swap(v, up, down);
+			if(up_index < down_index) { 
+				Collections.swap(v, up_index, down_index);
 			}
-		} while (up < down);
+		} while (up_index < down_index);
 		
-		Collections.swap(v, first, down);
-		return down;
+		Collections.swap(v, first, down_index);
+		return down_index;
 		
 	}
-		/*
-		 template<typename RI>
-			RI partition(RI first, RI last) {
-			// Start up and down at either end of the sequence.
-			// The first table element is the pivot value.
-			RI up = first + 1;
-			RI down = last - 1;
-			do {
-			
-				while ((up != last - 1) && !(*first < *up)) {
-				++up;
-				}
-				// Assert: up equals last-1 or table[up] > table[first].
-				while (*first < *down) {
-				--down;
-				}
-				// Assert: down equals first or table[down] <= table[first].
-				if (up < down) {   // if up is to the left of down,
-				// Exchange table[up] and table[down].
-				std::iter_swap(up, down);
-				}
-			} while (up < down); // Repeat while up is left of down.
-			
-			// Exchange table[first] and table[down] thus putting the
-			// pivot value where it belongs.
-			// Return position of pivot.
-			std::iter_swap(first, down);
-			return down;
-			}
-		 */
-
-	/*
-
-		template<typename RI>
-		void quick_sort(RI first, RI last) {
-		if (last - first > 1) {  // There is data to be sorted.
-		// Partition the table.
-		RI pivot = partition(first, last);
-		// Sort the left half.
-		KW::quick_sort(first, pivot);
-
-
-	 */
 	private static void Util_Insert(int first, int next_pos, int gap) {
 		int next_val = next_pos;
 		while((next_pos > (first + gap - 1) && (next_val < next_pos - gap))) {
@@ -185,19 +128,13 @@ public class Sort {
 		next_pos = next_val;
 	}
 	/*
-	void insert(RI first, RI next_pos, 
-			int gap) {
-			typename std::iterator_traits<RI>::value_type next_val = *next_pos;
-			// Shift all values > next_val in subarray down by gap.
-			while ((next_pos > first + gap - 1)  // First element not shifted.
-			&& (next_val < *(next_pos - gap))) {
-			*next_pos = *(next_pos - gap);   // Shift down.
-			next_pos -= gap;     // Check next position in subarray.
+		 4.1 next_pos is an iterator to the element to insert.
+		4.2 Save the value of the element to insert in next_val.
+		4.3 while next_pos > first + gap and the element at next_pos – gap >
+		next_val
+		4.4 Shift the element at next_pos – gap to position next_pos.
+		4.5 Decrement next_pos by gap.
+		4.6 Insert next_val at next_pos.
 
-			
-			}
-			*next_pos = next_val;
-			}
-			} // End namespace KW
-*/
+	 */
 }

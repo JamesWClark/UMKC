@@ -1,9 +1,13 @@
 package jwc62f.edu.umkc.assignment.two;
 
 import java.io.*;
+import java.util.Arrays;
 import java.util.Vector;
 
 public class Run {
+	
+	private static int[] sample = { 44, 75, 23, 43, 55, 12, 64, 77, 33 };
+
 	private static Vector<Integer> numbers_nearlysorted = null;
 	private static Vector<Integer> numbers_reverse = null;
 	private static Vector<Integer> numbers_random = null;
@@ -13,9 +17,9 @@ public class Run {
 			numbers_nearlysorted = GetVectorCSV("1000integers_nearlysorted.csv");
 			numbers_reverse = GetVectorCSV("1000integers_reverse.csv");
 			numbers_random = GetVectorCSV("1000integers_random.csv");
-			System.out.println("selection sort vs nearly sorted data:  " + Sort.Selection(numbers_nearlysorted) + " milliseconds");
-			System.out.println("selection sort vs reverse sorted data: " + Sort.Selection(numbers_reverse) + " milliseconds");
-			System.out.println("selection sort vs random sorted data:  " + Sort.Quick(numbers_random, 0, (numbers_random.size() - 1)) + " milliseconds");
+			System.out.println("selection sort vs nearly sorted data:  " + Sort.Shell(numbers_nearlysorted) + " milliseconds");
+			System.out.println("selection sort vs reverse sorted data: " + Sort.Shell(numbers_reverse) + " milliseconds");
+			System.out.println("selection sort vs random sorted data:  " + Sort.Shell(numbers_random) + " milliseconds");
 		} catch(IOException e) {
 			
 		} finally {
