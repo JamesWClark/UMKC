@@ -1,19 +1,7 @@
-//1000 strings file is from http://www.census.gov/genealogy/www/data/2000surnames/Top1000.xls
-//http://www.mkyong.com/java/how-to-read-file-from-java-bufferedreader-example/
-//http://www.mkyong.com/java/how-to-write-to-file-in-java-bufferedwriter-example/
-
 package jwc62f.edu.umkc.assignment.two;
 
-import java.util.Collections;
 import java.util.Calendar;
-import java.util.Vector;
 
-/**
- * 
- * this comment
- * @author JWC
- *
- */
 public class Sort {
 	
 	public static long Bubble(int[] array) {
@@ -30,26 +18,6 @@ public class Sort {
 		long finish = Calendar.getInstance().getTimeInMillis();
 		return (finish - start);
 	}
-	/*
-	public static long Selection(Vector<Integer> v) {
-		long start = Calendar.getInstance().getTimeInMillis();
-		int size = v.size();
-		for(int fill = 0; fill != size - 1; ++fill) {
-			int pos_min = fill;
-			for(int next = fill + 1; next != size; ++next) {
-				if(v.get(next) < v.get(pos_min)) {
-					pos_min = next;
-				}
-			}
-			if (fill != pos_min) { 
-				Collections.swap(v, fill, pos_min);
-			}
-		}
-		long finish = Calendar.getInstance().getTimeInMillis();
-		return (finish - start);
-	}
-	*/
-
 	public static long Selection(int[] array) {
 		long start = Calendar.getInstance().getTimeInMillis();
 		int size = array.length;
@@ -67,12 +35,6 @@ public class Sort {
 		long finish = Calendar.getInstance().getTimeInMillis();
 		return (finish - start);
 	}
-
-	private static void Swap(int[] array, int a, int b) {
-		int temp = array[b];
-		array[b] = array[a];
-		array[a] = temp;
-	}
 	public static long Insertion(int[] array) {
 		long start = Calendar.getInstance().getTimeInMillis();
 		int first = 0;
@@ -83,43 +45,6 @@ public class Sort {
 				Swap(array, next_pos-1, next_pos--);
 			}
 			array[next_val] = next_pos;
-		}
-		long finish = Calendar.getInstance().getTimeInMillis();
-		return (finish - start);
-	}
-	public static long Shell(int[] array) {
-		long start = Calendar.getInstance().getTimeInMillis();
-		int first = 0;
-		int last = array.length - 1;
-		//set the initial value of gap = n/2
-		int gap = (last - first) / 2; 
-		while(gap > 0) {
-			//for each element from position gap to the last element
-			for(int next_pos = first + gap; next_pos != last; ++next_pos) {
-				//insert this element where it belongs in the subarray
-				
-				int next_val = array[next_pos];
-				while((next_pos > (first + gap - 1) && (next_val < next_pos - gap))) {
-					next_pos = next_pos - gap;
-					next_pos -= gap;
-				}
-				array[next_pos] = next_val;
-				/*
-				4.1 next_pos is an iterator to the element to insert.
-					4.2 Save the value of the element to insert in next_val.
-					4.3 while next_pos > first + gap and the element at next_pos – gap >
-					next_val
-					4.4 Shift the element at next_pos – gap to position next_pos.
-					4.5 Decrement next_pos by gap.
- 
-				 */
-			}
-			//if gap is 2, set it to 1
-			if(gap == 2){
-				gap = 1;
-			} else {
-				gap = (int)(gap / 2.2);
-			}
 		}
 		long finish = Calendar.getInstance().getTimeInMillis();
 		return (finish - start);
@@ -164,31 +89,24 @@ public class Sort {
 		return down_index;
 	}
 	//http://stackoverflow.com/questions/4833423/shell-sort-java-example
-	public static long shellsort(int[] array)
-    {
+	public static long Shell(int[] array) {
 		long start = Calendar.getInstance().getTimeInMillis();
-        for( int gap = array.length / 2; gap > 0;
-                     gap = gap == 2 ? 1 : (int) ( gap / 2.2 ) )
-            for( int i = gap; i < array.length; i++ )
-            {
-                int tmp = array[ i ];
+        for (int gap = array.length / 2; gap > 0; gap = gap == 2 ? 1 : (int)( gap / 2.2 )) {
+            for (int i = gap; i < array.length; i++) {
+                int temp = array[i];
                 int j = i;
-
-                for( ; j >= gap && tmp < array[ j - gap ]; j -= gap )
-                	array[ j ] = array[ j - gap ];
-                array[ j ] = tmp;
+                for ( ; j >= gap && temp < array[j - gap]; j -= gap) {
+                	array[j] = array[j - gap];
+                }
+                array[j] = temp;
             }
+        }
 		long finish = Calendar.getInstance().getTimeInMillis();
 		return (finish - start);
     }
-	/*
-		 4.1 next_pos is an iterator to the element to insert.
-		4.2 Save the value of the element to insert in next_val.
-		4.3 while next_pos > first + gap and the element at next_pos – gap >
-		next_val
-		4.4 Shift the element at next_pos – gap to position next_pos.
-		4.5 Decrement next_pos by gap.
-		4.6 Insert next_val at next_pos.
-
-	 */
+	private static void Swap(int[] array, int a, int b) {
+		int temp = array[b];
+		array[b] = array[a];
+		array[a] = temp;
+	}
 }

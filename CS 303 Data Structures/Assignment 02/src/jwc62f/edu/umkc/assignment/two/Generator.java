@@ -3,7 +3,6 @@ package jwc62f.edu.umkc.assignment.two;
 import java.util.LinkedList;
 
 public class Generator {
-
 	//every 10th element will be swapped with its next, 0 to length-1
 	public static int[] GetNearlySortedArray(int length) { //bug: odd length throws index error
 		int[] array = new int[length];
@@ -21,9 +20,7 @@ public class Generator {
 	//random, 0 to length-1, no duplicates
 	public static int[] GetRandomArray(int length) {
 		int[] array = new int[length];
-		
 		LinkedList<Integer> list = new LinkedList<Integer>();
-		
 		for(int i = 0; i < length; i++) {
 			list.add(i);
 		}
