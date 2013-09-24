@@ -1,6 +1,7 @@
 package jwc62f.edu.umkc.assignment.two;
 
 import java.util.Calendar;
+import java.util.Vector;
 
 public class Run {
 	
@@ -9,7 +10,12 @@ public class Run {
 	private static int[] numbers_random = null;
 
 	public static void main(String[] args) {
-		SortCountTime();
+		Vector<Integer> vector = Generator.GetReverseVector(10);
+		Sort.Bubble(vector);
+		for(int i = 0; i < vector.size(); i++) {
+			System.out.println(vector.elementAt(i));
+		}
+		//SortCountTime();
 	}
 	public static void SortCountTime() {
 		

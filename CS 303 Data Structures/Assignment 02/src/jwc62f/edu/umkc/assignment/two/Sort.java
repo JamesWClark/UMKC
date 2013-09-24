@@ -1,9 +1,37 @@
 package jwc62f.edu.umkc.assignment.two;
 
 import java.util.Calendar;
+import java.util.Collections;
+import java.util.Vector;
 
 public class Sort {
 	
+	///////////////////////////////////////////// INTEGER VECTORS //////////////////////////////////////////
+	public static Object[] Bubble(Vector<Integer> vector) {
+		int iterations = 0;
+		int swaps = 0;
+		long start = Calendar.getInstance().getTimeInMillis();
+		int last = vector.size();
+		for(int pass = 1; pass < last; pass++) {
+			++iterations;
+			for(int first_of_pair = 0; first_of_pair != last - pass; ++first_of_pair) {
+				++iterations;
+				int second_of_pair = first_of_pair + 1;
+				if(vector.get(second_of_pair) < vector.get(first_of_pair)){
+					Collections.swap(vector, second_of_pair, first_of_pair);
+					++swaps;
+				}
+			}
+		}
+		long finish = Calendar.getInstance().getTimeInMillis();
+		Object[] stats = new Object[3];
+		stats[0] = (finish - start);
+		stats[1] = iterations;
+		stats[2] = swaps;
+		return stats;
+	}
+	
+	///////////////////////////////////////////// INTEGER ARRAYS ///////////////////////////////////////////
 	public static Object[] Bubble(int[] array) {
 		int iterations = 0;
 		int swaps = 0;
