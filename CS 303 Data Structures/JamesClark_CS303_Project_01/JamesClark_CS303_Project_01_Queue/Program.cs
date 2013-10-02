@@ -78,7 +78,7 @@ namespace JamesClark_CS303_Project_01_Queue {
                     ListDepartments();
                     Console.Write("\nIn which department is the person you want to change? ");
                     Department dept = departments[GetUserOption()];
-                    dept.ListExecutives();
+                    //dept.ListExecutives();
                     Console.Write("\nWhich person are you changing? ");
                     Executive exec = dept.GetExecutive(GetUserOption());
                     Change(exec, dept);
