@@ -13,9 +13,9 @@ namespace JamesClark_CS303_Project_01_gui {
 
         public void JoinExecutive(Executive executive) {
             Executives.Enqueue(executive);
-            UpdateSalaries();
+            Payroll();
         }
-        public void UpdateSalaries() {
+        public void Payroll() {
             int count = Executives.Count;
             Queue<Executive>.Enumerator enumerator = Executives.GetEnumerator();
             while (enumerator.MoveNext()) {
