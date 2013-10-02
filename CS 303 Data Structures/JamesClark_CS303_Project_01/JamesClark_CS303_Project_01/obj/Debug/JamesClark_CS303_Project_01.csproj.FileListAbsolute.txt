@@ -1,0 +1,5 @@
+C:\LocalStorage\JamesClark_CS303_Project_01\JamesClark_CS303_Project_01\bin\Debug\JamesClark_CS303_Project_01.exe
+C:\LocalStorage\JamesClark_CS303_Project_01\JamesClark_CS303_Project_01\bin\Debug\JamesClark_CS303_Project_01.pdb
+C:\LocalStorage\JamesClark_CS303_Project_01\JamesClark_CS303_Project_01\obj\Debug\JamesClark_CS303_Project_01.csprojResolveAssemblyReference.cache
+C:\LocalStorage\JamesClark_CS303_Project_01\JamesClark_CS303_Project_01\obj\Debug\JamesClark_CS303_Project_01.exe
+C:\LocalStorage\JamesClark_CS303_Project_01\JamesClark_CS303_Project_01\obj\Debug\JamesClark_CS303_Project_01.pdb

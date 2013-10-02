@@ -1,0 +1,4 @@
+C:\LocalStorage\JamesClark_CS303_Project_01\Sandbox\bin\Debug\Sandbox.exe
+C:\LocalStorage\JamesClark_CS303_Project_01\Sandbox\bin\Debug\Sandbox.pdb
+C:\LocalStorage\JamesClark_CS303_Project_01\Sandbox\obj\Debug\Sandbox.exe
+C:\LocalStorage\JamesClark_CS303_Project_01\Sandbox\obj\Debug\Sandbox.pdb
