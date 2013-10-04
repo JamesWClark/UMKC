@@ -1,0 +1,5 @@
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 05\JamesClark_CS303_Assignment_05\Problem 01\bin\Problem 01.dll
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 05\JamesClark_CS303_Assignment_05\Problem 01\bin\Problem 01.pdb
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 05\JamesClark_CS303_Assignment_05\Problem 01\obj\Debug\Problem 01.csprojResolveAssemblyReference.cache
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 05\JamesClark_CS303_Assignment_05\Problem 01\obj\Debug\Problem 01.dll
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 05\JamesClark_CS303_Assignment_05\Problem 01\obj\Debug\Problem 01.pdb
