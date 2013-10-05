@@ -10,6 +10,23 @@ namespace JamesClark_CS303_Project_01_gui {
         public Department(string departmentName) {
             this.DepartmentName = departmentName;          
         }
+        /// <summary>
+        /// Returns an Executive from the specified index in the Queue
+        /// </summary>
+        /// <param name="index"></param>
+        /// <returns>Executive</returns>
+        public Executive GetExecutive(int index) {
+            Queue<Executive>.Enumerator enumerator = Executives.GetEnumerator();
+            for (int i = 0; i < index + 1; i++) {
+                enumerator.MoveNext();
+            }
+            return enumerator.Current;
+        }
+        /// <summary>
+        /// Moves an Executive out of the current department, into a new department
+        /// </summary>
+        /// <param name="executive"></param>
+        /// <param name="department"></param>
         public void Change(Executive executive, Department department) {
             this.Quit(executive);
             department.Join(executive);
@@ -25,7 +42,7 @@ namespace JamesClark_CS303_Project_01_gui {
             Payroll();
         }
         /// <summary>
-        /// Finds and removes an Executive from the Queue.
+        /// Finds an Exeuctive by their ExecutiveID and removes them from the Queue.
         /// </summary>
         /// <remarks>Updates payroll.</remarks>
         /// <param name="executive"></param>
@@ -41,6 +58,17 @@ namespace JamesClark_CS303_Project_01_gui {
                 //if a match is found, the item will not be returned to the queue, thus removing it permanently
             }
             Payroll();
+        }
+        /// <summary>
+        /// Removes and returns an Executive from position index in the Queue
+        /// </summary>
+        /// <param name="index"></param>
+        /// <returns>Executive</returns>
+        public Executive Quit(int index) {
+            for (int i = 0; i < index; i++) {
+                Executives.Enqueue(Executives.Dequeue());
+            }
+            return Executives.Dequeue();
         }
         /// <summary>
         /// Updates payroll by iterating members of the Queue.

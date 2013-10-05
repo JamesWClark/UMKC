@@ -89,12 +89,11 @@ namespace JamesClark_CS303_Project_01_gui {
         }
 
         private void btn1v2_Click(object sender, EventArgs e) {
-            HideError();
-            if (lvDepartment1.SelectedIndices.Count == 0) {
-                ShowError("Select an executive from department 1.");
-            } else {
-                
-            }
+            ValidateChange(lvDepartment1);
+            Executive exec = departments[0].GetExecutive(lvDepartment1.SelectedIndices[0]);
+            departments[0].Change(exec, departments[1]);
+            ListExecutives(departments[0].Executives, lvDepartment1);
+            ListExecutives(departments[1].Executives, lvDepartment2);
         }
 
         private void btn1v2left_Click(object sender, EventArgs e) {
@@ -112,6 +111,7 @@ namespace JamesClark_CS303_Project_01_gui {
         }
 
         private void lvDepartment1_Click(object sender, EventArgs e) {
+            HideError();
             btn1Quit.Enabled = true;
             btn2Quit.Enabled = false;
             btn3Quit.Enabled = false;
@@ -123,6 +123,7 @@ namespace JamesClark_CS303_Project_01_gui {
         }
 
         private void lvDepartment2_Click(object sender, EventArgs e) {
+            HideError();
             btn1Quit.Enabled = false;
             btn2Quit.Enabled = true;
             btn3Quit.Enabled = false;
@@ -134,6 +135,7 @@ namespace JamesClark_CS303_Project_01_gui {
         }
 
         private void lvDepartment3_Click(object sender, EventArgs e) {
+            HideError();
             btn1Quit.Enabled = false;
             btn2Quit.Enabled = false;
             btn3Quit.Enabled = true;
@@ -143,7 +145,12 @@ namespace JamesClark_CS303_Project_01_gui {
             btn2v3.Enabled = false;
             btn3v2.Enabled = true;
         }
-
+        private void ValidateChange(ListView listView) {
+            HideError();
+            if (listView.SelectedIndices.Count == 0) {
+                ShowError("Select an executive from department 1.");
+            }
+        }
         /*
         private void lvDepartments_SelectedIndexChanged(object sender, EventArgs e) {
 
