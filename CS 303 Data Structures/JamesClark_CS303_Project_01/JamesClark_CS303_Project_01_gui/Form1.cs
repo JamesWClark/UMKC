@@ -21,22 +21,23 @@ namespace JamesClark_CS303_Project_01_gui {
             zero.Join(new Executive("Hussam", "Hashem", Guid.NewGuid()));
             zero.Join(new Executive("James", "Clark", Guid.NewGuid()));
             departments[0] = zero;
-            ListExecutives(zero.Executives.GetEnumerator(), lvDepartment1);
+            ListExecutives(zero.Executives, lvDepartment1);
 
             Department one = new Department("Students");
             one.Join(new Executive("Kim", "Heckman", Guid.NewGuid()));
             one.Join(new Executive("Rebecca", "Clark", Guid.NewGuid()));
             departments[1] = one;
-            ListExecutives(one.Executives.GetEnumerator(), lvDepartment2);
+            ListExecutives(one.Executives, lvDepartment2);
 
             Department two = new Department("Workers");
             two.Join(new Executive("Patrick", "Connelly", Guid.NewGuid()));
             two.Join(new Executive("Justin", "Noonan", Guid.NewGuid()));
             departments[2] = two;
-            ListExecutives(two.Executives.GetEnumerator(), lvDepartment3);
+            ListExecutives(two.Executives, lvDepartment3);
         }
-        private void ListExecutives(Queue<Executive>.Enumerator enumerator, ListView listView) {
+        private void ListExecutives(Queue<Executive> executives, ListView listView) {
             listView.Clear();
+            Queue<Executive>.Enumerator enumerator = executives.GetEnumerator();
             while (enumerator.MoveNext()) {
                 listView.Items.Add(enumerator.Current.ToString());
             }
@@ -44,11 +45,7 @@ namespace JamesClark_CS303_Project_01_gui {
 
         private void Form1_Load(object sender, EventArgs e) {
             Init();
-            
-        }
-
-        private void lvDepartment1_SelectedIndexChanged(object sender, EventArgs e) {
-
+            btn3Quit.Enabled = false;
         }
 
         private void btnJoinDepartment_Click(object sender, EventArgs e) {
@@ -64,15 +61,15 @@ namespace JamesClark_CS303_Project_01_gui {
                         switch (rb.Name) {
                             case "rbDepartment1":
                                 departments[0].Join(new Executive(txtFirstName.Text, txtLastName.Text, Guid.NewGuid()));
-                                ListExecutives(departments[0].Executives.GetEnumerator(), lvDepartment1);
+                                ListExecutives(departments[0].Executives, lvDepartment1);
                                 break;
                             case "rbDepartment2":
                                 departments[1].Join(new Executive(txtFirstName.Text, txtLastName.Text, Guid.NewGuid()));
-                                ListExecutives(departments[1].Executives.GetEnumerator(), lvDepartment2);
+                                ListExecutives(departments[1].Executives, lvDepartment2);
                                 break;
                             case "rbDepartment3":
                                 departments[2].Join(new Executive(txtFirstName.Text, txtLastName.Text, Guid.NewGuid()));
-                                ListExecutives(departments[2].Executives.GetEnumerator(), lvDepartment3);
+                                ListExecutives(departments[2].Executives, lvDepartment3);
                                 break;
                         }
                         
@@ -91,7 +88,7 @@ namespace JamesClark_CS303_Project_01_gui {
             txtError.Text = String.Empty;
         }
 
-        private void btn1v2right_Click(object sender, EventArgs e) {
+        private void btn1v2_Click(object sender, EventArgs e) {
             HideError();
             if (lvDepartment1.SelectedIndices.Count == 0) {
                 ShowError("Select an executive from department 1.");
@@ -99,23 +96,54 @@ namespace JamesClark_CS303_Project_01_gui {
                 
             }
         }
-        private void Change(Executive executive, Department fromDepartment, Department toDepartment) {
-
-        }
 
         private void btn1v2left_Click(object sender, EventArgs e) {
 
         }
 
-        private void btn1v2quit_Click(object sender, EventArgs e) {
+        private void btn1Quit_Click(object sender, EventArgs e) {
             Queue<Executive>.Enumerator enumerator = departments[0].Executives.GetEnumerator();
             for (int i = 0; i <= lvDepartment1.SelectedIndices[0]; i++) {
                 enumerator.MoveNext();
             }
             Executive exec = enumerator.Current;
             departments[0].Quit(exec);
-            ListExecutives(departments[0].Executives.GetEnumerator(), lvDepartment1);
+            ListExecutives(departments[0].Executives, lvDepartment1);
         }
+
+        private void lvDepartment1_Click(object sender, EventArgs e) {
+            btn1Quit.Enabled = true;
+            btn2Quit.Enabled = false;
+            btn3Quit.Enabled = false;
+
+            btn1v2.Enabled = true;
+            btn2v1.Enabled = false;
+            btn2v3.Enabled = false;
+            btn3v2.Enabled = false;
+        }
+
+        private void lvDepartment2_Click(object sender, EventArgs e) {
+            btn1Quit.Enabled = false;
+            btn2Quit.Enabled = true;
+            btn3Quit.Enabled = false;
+
+            btn1v2.Enabled = false;
+            btn2v1.Enabled = true;
+            btn2v3.Enabled = true;
+            btn3v2.Enabled = false;
+        }
+
+        private void lvDepartment3_Click(object sender, EventArgs e) {
+            btn1Quit.Enabled = false;
+            btn2Quit.Enabled = false;
+            btn3Quit.Enabled = true;
+
+            btn1v2.Enabled = false;
+            btn2v1.Enabled = false;
+            btn2v3.Enabled = false;
+            btn3v2.Enabled = true;
+        }
+
         /*
         private void lvDepartments_SelectedIndexChanged(object sender, EventArgs e) {
 

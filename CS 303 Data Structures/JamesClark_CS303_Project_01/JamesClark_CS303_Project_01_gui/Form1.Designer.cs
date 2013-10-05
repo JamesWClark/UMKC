@@ -38,15 +38,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.btn1v2right = new System.Windows.Forms.Button();
-            this.btn1v2left = new System.Windows.Forms.Button();
-            this.btn1v2quit = new System.Windows.Forms.Button();
-            this.btn2v3quit = new System.Windows.Forms.Button();
-            this.btn2v3left = new System.Windows.Forms.Button();
-            this.btn2v3right = new System.Windows.Forms.Button();
+            this.btn1v2 = new System.Windows.Forms.Button();
+            this.btn2v1 = new System.Windows.Forms.Button();
+            this.btn1Quit = new System.Windows.Forms.Button();
+            this.btn2Quit = new System.Windows.Forms.Button();
+            this.btn3v2 = new System.Windows.Forms.Button();
+            this.btn2v3 = new System.Windows.Forms.Button();
             this.pnl1v2 = new System.Windows.Forms.Panel();
             this.pnl2v3 = new System.Windows.Forms.Panel();
             this.txtError = new System.Windows.Forms.TextBox();
+            this.btn3Quit = new System.Windows.Forms.Button();
             this.pnlRadioButtons.SuspendLayout();
             this.pnl1v2.SuspendLayout();
             this.pnl2v3.SuspendLayout();
@@ -55,13 +56,14 @@
             // lvDepartment3
             // 
             this.lvDepartment3.HideSelection = false;
-            this.lvDepartment3.Location = new System.Drawing.Point(548, 151);
+            this.lvDepartment3.Location = new System.Drawing.Point(545, 154);
             this.lvDepartment3.MultiSelect = false;
             this.lvDepartment3.Name = "lvDepartment3";
             this.lvDepartment3.Size = new System.Drawing.Size(175, 189);
             this.lvDepartment3.TabIndex = 5;
             this.lvDepartment3.UseCompatibleStateImageBehavior = false;
             this.lvDepartment3.View = System.Windows.Forms.View.List;
+            this.lvDepartment3.Click += new System.EventHandler(this.lvDepartment3_Click);
             // 
             // lvDepartment2
             // 
@@ -73,6 +75,7 @@
             this.lvDepartment2.TabIndex = 6;
             this.lvDepartment2.UseCompatibleStateImageBehavior = false;
             this.lvDepartment2.View = System.Windows.Forms.View.List;
+            this.lvDepartment2.Click += new System.EventHandler(this.lvDepartment2_Click);
             // 
             // lvDepartment1
             // 
@@ -84,7 +87,7 @@
             this.lvDepartment1.TabIndex = 7;
             this.lvDepartment1.UseCompatibleStateImageBehavior = false;
             this.lvDepartment1.View = System.Windows.Forms.View.List;
-            this.lvDepartment1.SelectedIndexChanged += new System.EventHandler(this.lvDepartment1_SelectedIndexChanged);
+            this.lvDepartment1.Click += new System.EventHandler(this.lvDepartment1_Click);
             // 
             // btnJoinDepartment
             // 
@@ -197,68 +200,73 @@
             this.label5.TabIndex = 22;
             this.label5.Text = "Department 3";
             // 
-            // btn1v2right
+            // btn1v2
             // 
-            this.btn1v2right.Location = new System.Drawing.Point(3, 3);
-            this.btn1v2right.Name = "btn1v2right";
-            this.btn1v2right.Size = new System.Drawing.Size(75, 23);
-            this.btn1v2right.TabIndex = 23;
-            this.btn1v2right.Text = "Change >>";
-            this.btn1v2right.UseVisualStyleBackColor = true;
-            this.btn1v2right.Click += new System.EventHandler(this.btn1v2right_Click);
+            this.btn1v2.Enabled = false;
+            this.btn1v2.Location = new System.Drawing.Point(3, 3);
+            this.btn1v2.Name = "btn1v2";
+            this.btn1v2.Size = new System.Drawing.Size(75, 23);
+            this.btn1v2.TabIndex = 23;
+            this.btn1v2.Text = "Change >>";
+            this.btn1v2.UseVisualStyleBackColor = true;
+            this.btn1v2.Click += new System.EventHandler(this.btn1v2_Click);
             // 
-            // btn1v2left
+            // btn2v1
             // 
-            this.btn1v2left.Location = new System.Drawing.Point(3, 33);
-            this.btn1v2left.Name = "btn1v2left";
-            this.btn1v2left.Size = new System.Drawing.Size(75, 23);
-            this.btn1v2left.TabIndex = 24;
-            this.btn1v2left.Text = "<< Change";
-            this.btn1v2left.UseVisualStyleBackColor = true;
-            this.btn1v2left.Click += new System.EventHandler(this.btn1v2left_Click);
+            this.btn2v1.Enabled = false;
+            this.btn2v1.Location = new System.Drawing.Point(3, 33);
+            this.btn2v1.Name = "btn2v1";
+            this.btn2v1.Size = new System.Drawing.Size(75, 23);
+            this.btn2v1.TabIndex = 24;
+            this.btn2v1.Text = "<< Change";
+            this.btn2v1.UseVisualStyleBackColor = true;
+            this.btn2v1.Click += new System.EventHandler(this.btn1v2left_Click);
             // 
-            // btn1v2quit
+            // btn1Quit
             // 
-            this.btn1v2quit.Location = new System.Drawing.Point(3, 63);
-            this.btn1v2quit.Name = "btn1v2quit";
-            this.btn1v2quit.Size = new System.Drawing.Size(75, 23);
-            this.btn1v2quit.TabIndex = 25;
-            this.btn1v2quit.Text = "Quit";
-            this.btn1v2quit.UseVisualStyleBackColor = true;
-            this.btn1v2quit.Click += new System.EventHandler(this.btn1v2quit_Click);
+            this.btn1Quit.Enabled = false;
+            this.btn1Quit.Location = new System.Drawing.Point(12, 349);
+            this.btn1Quit.Name = "btn1Quit";
+            this.btn1Quit.Size = new System.Drawing.Size(75, 23);
+            this.btn1Quit.TabIndex = 25;
+            this.btn1Quit.Text = "Quit";
+            this.btn1Quit.UseVisualStyleBackColor = true;
+            this.btn1Quit.Click += new System.EventHandler(this.btn1Quit_Click);
             // 
-            // btn2v3quit
+            // btn2Quit
             // 
-            this.btn2v3quit.Location = new System.Drawing.Point(3, 63);
-            this.btn2v3quit.Name = "btn2v3quit";
-            this.btn2v3quit.Size = new System.Drawing.Size(75, 23);
-            this.btn2v3quit.TabIndex = 28;
-            this.btn2v3quit.Text = "Quit";
-            this.btn2v3quit.UseVisualStyleBackColor = true;
+            this.btn2Quit.Enabled = false;
+            this.btn2Quit.Location = new System.Drawing.Point(280, 346);
+            this.btn2Quit.Name = "btn2Quit";
+            this.btn2Quit.Size = new System.Drawing.Size(75, 23);
+            this.btn2Quit.TabIndex = 28;
+            this.btn2Quit.Text = "Quit";
+            this.btn2Quit.UseVisualStyleBackColor = true;
             // 
-            // btn2v3left
+            // btn3v2
             // 
-            this.btn2v3left.Location = new System.Drawing.Point(3, 33);
-            this.btn2v3left.Name = "btn2v3left";
-            this.btn2v3left.Size = new System.Drawing.Size(75, 23);
-            this.btn2v3left.TabIndex = 27;
-            this.btn2v3left.Text = "<< Change";
-            this.btn2v3left.UseVisualStyleBackColor = true;
+            this.btn3v2.Enabled = false;
+            this.btn3v2.Location = new System.Drawing.Point(3, 3);
+            this.btn3v2.Name = "btn3v2";
+            this.btn3v2.Size = new System.Drawing.Size(75, 23);
+            this.btn3v2.TabIndex = 27;
+            this.btn3v2.Text = "<< Change";
+            this.btn3v2.UseVisualStyleBackColor = true;
             // 
-            // btn2v3right
+            // btn2v3
             // 
-            this.btn2v3right.Location = new System.Drawing.Point(3, 3);
-            this.btn2v3right.Name = "btn2v3right";
-            this.btn2v3right.Size = new System.Drawing.Size(75, 23);
-            this.btn2v3right.TabIndex = 26;
-            this.btn2v3right.Text = "Change >>";
-            this.btn2v3right.UseVisualStyleBackColor = true;
+            this.btn2v3.Enabled = false;
+            this.btn2v3.Location = new System.Drawing.Point(3, 32);
+            this.btn2v3.Name = "btn2v3";
+            this.btn2v3.Size = new System.Drawing.Size(75, 23);
+            this.btn2v3.TabIndex = 26;
+            this.btn2v3.Text = "Change >>";
+            this.btn2v3.UseVisualStyleBackColor = true;
             // 
             // pnl1v2
             // 
-            this.pnl1v2.Controls.Add(this.btn1v2right);
-            this.pnl1v2.Controls.Add(this.btn1v2left);
-            this.pnl1v2.Controls.Add(this.btn1v2quit);
+            this.pnl1v2.Controls.Add(this.btn1v2);
+            this.pnl1v2.Controls.Add(this.btn2v1);
             this.pnl1v2.Location = new System.Drawing.Point(193, 196);
             this.pnl1v2.Name = "pnl1v2";
             this.pnl1v2.Size = new System.Drawing.Size(81, 89);
@@ -266,9 +274,8 @@
             // 
             // pnl2v3
             // 
-            this.pnl2v3.Controls.Add(this.btn2v3right);
-            this.pnl2v3.Controls.Add(this.btn2v3left);
-            this.pnl2v3.Controls.Add(this.btn2v3quit);
+            this.pnl2v3.Controls.Add(this.btn2v3);
+            this.pnl2v3.Controls.Add(this.btn3v2);
             this.pnl2v3.Location = new System.Drawing.Point(461, 196);
             this.pnl2v3.Name = "pnl2v3";
             this.pnl2v3.Size = new System.Drawing.Size(81, 89);
@@ -285,13 +292,26 @@
             this.txtError.TabIndex = 31;
             this.txtError.Visible = false;
             // 
+            // btn3Quit
+            // 
+            this.btn3Quit.Enabled = false;
+            this.btn3Quit.Location = new System.Drawing.Point(548, 346);
+            this.btn3Quit.Name = "btn3Quit";
+            this.btn3Quit.Size = new System.Drawing.Size(75, 23);
+            this.btn3Quit.TabIndex = 32;
+            this.btn3Quit.Text = "Quit";
+            this.btn3Quit.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(738, 355);
+            this.ClientSize = new System.Drawing.Size(738, 403);
+            this.Controls.Add(this.btn3Quit);
             this.Controls.Add(this.txtError);
             this.Controls.Add(this.pnl2v3);
+            this.Controls.Add(this.btn2Quit);
+            this.Controls.Add(this.btn1Quit);
             this.Controls.Add(this.pnl1v2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -335,15 +355,16 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btn1v2right;
-        private System.Windows.Forms.Button btn1v2left;
-        private System.Windows.Forms.Button btn1v2quit;
-        private System.Windows.Forms.Button btn2v3quit;
-        private System.Windows.Forms.Button btn2v3left;
-        private System.Windows.Forms.Button btn2v3right;
+        private System.Windows.Forms.Button btn1v2;
+        private System.Windows.Forms.Button btn2v1;
+        private System.Windows.Forms.Button btn1Quit;
+        private System.Windows.Forms.Button btn2Quit;
+        private System.Windows.Forms.Button btn3v2;
+        private System.Windows.Forms.Button btn2v3;
         private System.Windows.Forms.Panel pnl1v2;
         private System.Windows.Forms.Panel pnl2v3;
         private System.Windows.Forms.TextBox txtError;
+        private System.Windows.Forms.Button btn3Quit;
     }
 }
 
