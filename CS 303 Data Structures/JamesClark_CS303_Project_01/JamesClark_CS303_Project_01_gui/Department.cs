@@ -11,8 +11,17 @@ namespace JamesClark_CS303_Project_01_gui {
             this.DepartmentName = departmentName;          
         }
 
-        public void JoinExecutive(Executive executive) {
+        public void Join(Executive executive) {
             Executives.Enqueue(executive);
+            Payroll();
+        }
+        public void Quit(Executive executive) {
+            for (int i = 0; i < Executives.Count; i++) {
+                Executive current = Executives.Dequeue();
+                if (current != executive) {
+                    
+                }
+            }
             Payroll();
         }
         public void Payroll() {

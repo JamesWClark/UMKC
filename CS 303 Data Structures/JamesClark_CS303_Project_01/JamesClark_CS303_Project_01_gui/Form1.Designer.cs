@@ -199,37 +199,36 @@
             // 
             // btn1v2right
             // 
-            this.btn1v2right.Enabled = false;
             this.btn1v2right.Location = new System.Drawing.Point(3, 3);
             this.btn1v2right.Name = "btn1v2right";
             this.btn1v2right.Size = new System.Drawing.Size(75, 23);
             this.btn1v2right.TabIndex = 23;
             this.btn1v2right.Text = "Change >>";
             this.btn1v2right.UseVisualStyleBackColor = true;
+            this.btn1v2right.Click += new System.EventHandler(this.btn1v2right_Click);
             // 
             // btn1v2left
             // 
-            this.btn1v2left.Enabled = false;
             this.btn1v2left.Location = new System.Drawing.Point(3, 33);
             this.btn1v2left.Name = "btn1v2left";
             this.btn1v2left.Size = new System.Drawing.Size(75, 23);
             this.btn1v2left.TabIndex = 24;
             this.btn1v2left.Text = "<< Change";
             this.btn1v2left.UseVisualStyleBackColor = true;
+            this.btn1v2left.Click += new System.EventHandler(this.btn1v2left_Click);
             // 
             // btn1v2quit
             // 
-            this.btn1v2quit.Enabled = false;
             this.btn1v2quit.Location = new System.Drawing.Point(3, 63);
             this.btn1v2quit.Name = "btn1v2quit";
             this.btn1v2quit.Size = new System.Drawing.Size(75, 23);
             this.btn1v2quit.TabIndex = 25;
             this.btn1v2quit.Text = "Quit";
             this.btn1v2quit.UseVisualStyleBackColor = true;
+            this.btn1v2quit.Click += new System.EventHandler(this.btn1v2quit_Click);
             // 
             // btn2v3quit
             // 
-            this.btn2v3quit.Enabled = false;
             this.btn2v3quit.Location = new System.Drawing.Point(3, 63);
             this.btn2v3quit.Name = "btn2v3quit";
             this.btn2v3quit.Size = new System.Drawing.Size(75, 23);
@@ -239,7 +238,6 @@
             // 
             // btn2v3left
             // 
-            this.btn2v3left.Enabled = false;
             this.btn2v3left.Location = new System.Drawing.Point(3, 33);
             this.btn2v3left.Name = "btn2v3left";
             this.btn2v3left.Size = new System.Drawing.Size(75, 23);
@@ -249,7 +247,6 @@
             // 
             // btn2v3right
             // 
-            this.btn2v3right.Enabled = false;
             this.btn2v3right.Location = new System.Drawing.Point(3, 3);
             this.btn2v3right.Name = "btn2v3right";
             this.btn2v3right.Size = new System.Drawing.Size(75, 23);
