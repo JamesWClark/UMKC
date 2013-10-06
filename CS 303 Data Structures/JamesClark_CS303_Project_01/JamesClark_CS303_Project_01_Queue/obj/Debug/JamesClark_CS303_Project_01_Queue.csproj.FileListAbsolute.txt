@@ -4,5 +4,6 @@ C:\LocalStorage\JamesClark_CS303_Project_01\JamesClark_CS303_Project_01_Queue\ob
 C:\LocalStorage\JamesClark_CS303_Project_01\JamesClark_CS303_Project_01_Queue\obj\Debug\JamesClark_CS303_Project_01_Queue.pdb
 C:\LocalStorage\UMKC\CS 303 Data Structures\JamesClark_CS303_Project_01\JamesClark_CS303_Project_01_Queue\bin\Debug\JamesClark_CS303_Project_01_Queue.exe
 C:\LocalStorage\UMKC\CS 303 Data Structures\JamesClark_CS303_Project_01\JamesClark_CS303_Project_01_Queue\bin\Debug\JamesClark_CS303_Project_01_Queue.pdb
+C:\LocalStorage\UMKC\CS 303 Data Structures\JamesClark_CS303_Project_01\JamesClark_CS303_Project_01_Queue\obj\Debug\JamesClark_CS303_Project_01_Queue.csprojResolveAssemblyReference.cache
 C:\LocalStorage\UMKC\CS 303 Data Structures\JamesClark_CS303_Project_01\JamesClark_CS303_Project_01_Queue\obj\Debug\JamesClark_CS303_Project_01_Queue.exe
 C:\LocalStorage\UMKC\CS 303 Data Structures\JamesClark_CS303_Project_01\JamesClark_CS303_Project_01_Queue\obj\Debug\JamesClark_CS303_Project_01_Queue.pdb

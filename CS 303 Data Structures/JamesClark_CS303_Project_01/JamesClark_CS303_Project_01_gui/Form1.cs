@@ -96,12 +96,49 @@ namespace JamesClark_CS303_Project_01_gui {
             }
         }
 
-        private void btn1v2_Click(object sender, EventArgs e) {
-            ValidateChange(lvDepartment1);
-            Executive exec = departments[0].GetExecutive(lvDepartment1.SelectedIndices[0]);
-            departments[0].Change(exec, departments[1]);
-            ListExecutives(departments[0].Executives, lvDepartment1);
-            ListExecutives(departments[1].Executives, lvDepartment2);
+        private void btnChange_Click(object sender, EventArgs e) {
+            try {
+                Button button = (Button)sender;
+                ListView listFrom = null;
+                ListView listTo = null;
+                int fromIndex = -1;
+                int toIndex = -1;
+                if (button != null) {
+                    switch (button.Name) {
+                        case "btn1v2":
+                            fromIndex = 0;
+                            toIndex = 1;
+                            listFrom = lvDepartment1;
+                            listTo = lvDepartment2;
+                            break;
+                        case "btn2v1":
+                            fromIndex = 1;
+                            toIndex = 0;
+                            listFrom = lvDepartment2;
+                            listTo = lvDepartment1;
+                            break;
+                        case "btn2v3":
+                            fromIndex = 1;
+                            toIndex = 2;
+                            listFrom = lvDepartment2;
+                            listTo = lvDepartment3;
+                            break;
+                        case "btn3v2":
+                            fromIndex = 2;
+                            toIndex = 1;
+                            listFrom = lvDepartment3;
+                            listTo = lvDepartment2;
+                            break;
+                    }
+                }
+                ValidateChange(listFrom);
+                Executive exec = departments[fromIndex].GetExecutive(listFrom.SelectedIndices[0]);
+                departments[fromIndex].Change(exec, departments[toIndex]);
+                ListExecutives(departments[fromIndex].Executives, listFrom);
+                ListExecutives(departments[toIndex].Executives, listTo);
+            } catch (ArgumentException) {
+                
+            }
         }
 
         private void btnQuit_Click(object sender, EventArgs e) {

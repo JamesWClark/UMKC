@@ -209,7 +209,7 @@
             this.btn1v2.TabIndex = 23;
             this.btn1v2.Text = "Change >>";
             this.btn1v2.UseVisualStyleBackColor = true;
-            this.btn1v2.Click += new System.EventHandler(this.btn1v2_Click);
+            this.btn1v2.Click += new System.EventHandler(this.btnChange_Click);
             // 
             // btn2v1
             // 
@@ -220,6 +220,7 @@
             this.btn2v1.TabIndex = 24;
             this.btn2v1.Text = "<< Change";
             this.btn2v1.UseVisualStyleBackColor = true;
+            this.btn2v1.Click += new System.EventHandler(this.btnChange_Click);
             // 
             // btn1Quit
             // 
@@ -252,6 +253,7 @@
             this.btn3v2.TabIndex = 27;
             this.btn3v2.Text = "<< Change";
             this.btn3v2.UseVisualStyleBackColor = true;
+            this.btn3v2.Click += new System.EventHandler(this.btnChange_Click);
             // 
             // btn2v3
             // 
@@ -262,6 +264,7 @@
             this.btn2v3.TabIndex = 26;
             this.btn2v3.Text = "Change >>";
             this.btn2v3.UseVisualStyleBackColor = true;
+            this.btn2v3.Click += new System.EventHandler(this.btnChange_Click);
             // 
             // pnl1v2
             // 
