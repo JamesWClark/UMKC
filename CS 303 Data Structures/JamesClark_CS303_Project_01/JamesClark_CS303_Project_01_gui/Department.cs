@@ -7,6 +7,16 @@ namespace JamesClark_CS303_Project_01_gui {
         public string DepartmentName { get; set; }
         public Queue<Executive> Executives = new Queue<Executive>();
 
+        /// <summary>
+        /// The default construct constructs a new Department object
+        /// </summary>
+        public Department() {
+
+        }
+        /// <summary>
+        /// Construct a new Department including its name.
+        /// </summary>
+        /// <param name="departmentName"></param>
         public Department(string departmentName) {
             this.DepartmentName = departmentName;          
         }

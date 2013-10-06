@@ -15,6 +15,9 @@ namespace JamesClark_CS303_Project_01_gui {
         public Form1() {
             InitializeComponent();
         }
+        /// <summary>
+        /// The Init method loads the form with sample data.
+        /// </summary>
         private void Init() {
             Department zero = new Department("UMKC");
             zero.Join(new Executive("Mohammad", "Kuhail", Guid.NewGuid()));
@@ -42,10 +45,23 @@ namespace JamesClark_CS303_Project_01_gui {
                 listView.Items.Add(enumerator.Current.ToString());
             }
         }
+        private void ValidateChange(ListView listView) {
+            HideError();
+            if (listView.SelectedIndices.Count == 0) {
+                ShowError("Select an executive.");
+            }
+        }
+        private void ShowError(string error) {
+            txtError.Visible = true;
+            txtError.Text = error;
+        }
+        private void HideError() {
+            txtError.Visible = false;
+            txtError.Text = String.Empty;
+        }
 
         private void Form1_Load(object sender, EventArgs e) {
             Init();
-            btn3Quit.Enabled = false;
         }
 
         private void btnJoinDepartment_Click(object sender, EventArgs e) {
@@ -79,14 +95,6 @@ namespace JamesClark_CS303_Project_01_gui {
                 }
             }
         }
-        private void ShowError(string error) {
-            txtError.Visible = true;
-            txtError.Text = error;
-        }
-        private void HideError() {
-            txtError.Visible = false;
-            txtError.Text = String.Empty;
-        }
 
         private void btn1v2_Click(object sender, EventArgs e) {
             ValidateChange(lvDepartment1);
@@ -96,74 +104,73 @@ namespace JamesClark_CS303_Project_01_gui {
             ListExecutives(departments[1].Executives, lvDepartment2);
         }
 
-        private void btn1v2left_Click(object sender, EventArgs e) {
-
-        }
-
-        private void btn1Quit_Click(object sender, EventArgs e) {
-            Queue<Executive>.Enumerator enumerator = departments[0].Executives.GetEnumerator();
-            for (int i = 0; i <= lvDepartment1.SelectedIndices[0]; i++) {
-                enumerator.MoveNext();
+        private void btnQuit_Click(object sender, EventArgs e) {
+            Button quitButton = (Button)sender;
+            int index = -1;
+            ListView listView = null;
+            switch (quitButton.Name) {
+                case "btn1Quit":
+                    index = 0;
+                    listView = lvDepartment1;
+                    break;
+                case "btn2Quit":
+                    index = 1;
+                    listView = lvDepartment2;
+                    break;
+                case "btn3Quit":
+                    index = 2;
+                    listView = lvDepartment3;
+                    break;
             }
-            Executive exec = enumerator.Current;
-            departments[0].Quit(exec);
-            ListExecutives(departments[0].Executives, lvDepartment1);
-        }
-
-        private void lvDepartment1_Click(object sender, EventArgs e) {
-            HideError();
-            btn1Quit.Enabled = true;
-            btn2Quit.Enabled = false;
-            btn3Quit.Enabled = false;
-
-            btn1v2.Enabled = true;
-            btn2v1.Enabled = false;
-            btn2v3.Enabled = false;
-            btn3v2.Enabled = false;
-        }
-
-        private void lvDepartment2_Click(object sender, EventArgs e) {
-            HideError();
-            btn1Quit.Enabled = false;
-            btn2Quit.Enabled = true;
-            btn3Quit.Enabled = false;
-
-            btn1v2.Enabled = false;
-            btn2v1.Enabled = true;
-            btn2v3.Enabled = true;
-            btn3v2.Enabled = false;
-        }
-
-        private void lvDepartment3_Click(object sender, EventArgs e) {
-            HideError();
-            btn1Quit.Enabled = false;
-            btn2Quit.Enabled = false;
-            btn3Quit.Enabled = true;
-
-            btn1v2.Enabled = false;
-            btn2v1.Enabled = false;
-            btn2v3.Enabled = false;
-            btn3v2.Enabled = true;
-        }
-        private void ValidateChange(ListView listView) {
-            HideError();
-            if (listView.SelectedIndices.Count == 0) {
-                ShowError("Select an executive from department 1.");
-            }
-        }
-        /*
-        private void lvDepartments_SelectedIndexChanged(object sender, EventArgs e) {
-
-            Department.Enumerator enumerator;
-            try { //try,catch is necessary because the second click in a listview throws an index out of range
-                enumerator = departments[lvDepartment3.SelectedIndices[0]].GetEnumerator();
-                while (enumerator.MoveNext()) {
-                    lvExecutives.Items.Add(enumerator.Current.ToString());
+            try {
+                Queue<Executive>.Enumerator enumerator = departments[index].Executives.GetEnumerator();
+                for (int i = 0; i <= listView.SelectedIndices[0]; i++) {
+                    enumerator.MoveNext();
                 }
-            } catch {
-            }
+                Executive exec = enumerator.Current;
+                departments[index].Quit(exec);
+                ListExecutives(departments[index].Executives, listView);
+            } catch (IndexOutOfRangeException) {
 
+            } catch (ArgumentException) {
+                ValidateChange(listView);
+            }
         }
-         * */
+
+        private void lvDepartment_Click(object sender, EventArgs e) {
+            HideError();
+            ListView lv = (ListView)sender;
+            if (sender != null) {
+                switch (lv.Name) {
+                    case "lvDepartment1":
+                        btn1Quit.Enabled = true;
+                        btn2Quit.Enabled = false;
+                        btn3Quit.Enabled = false;
+                        btn1v2.Enabled = true;
+                        btn2v1.Enabled = false;
+                        btn2v3.Enabled = false;
+                        btn3v2.Enabled = false;
+                        break;
+                    case "lvDepartment2":
+                        btn1Quit.Enabled = false;
+                        btn2Quit.Enabled = true;
+                        btn3Quit.Enabled = false;
+                        btn1v2.Enabled = false;
+                        btn2v1.Enabled = true;
+                        btn2v3.Enabled = true;
+                        btn3v2.Enabled = false;
+                        break;
+                    case "lvDepartment3":
+                        btn1Quit.Enabled = false;
+                        btn2Quit.Enabled = false;
+                        btn3Quit.Enabled = true;
+                        btn1v2.Enabled = false;
+                        btn2v1.Enabled = false;
+                        btn2v3.Enabled = false;
+                        btn3v2.Enabled = true;
+                        break;
+                }
+            }
+        }
     }
 }

@@ -63,7 +63,7 @@
             this.lvDepartment3.TabIndex = 5;
             this.lvDepartment3.UseCompatibleStateImageBehavior = false;
             this.lvDepartment3.View = System.Windows.Forms.View.List;
-            this.lvDepartment3.Click += new System.EventHandler(this.lvDepartment3_Click);
+            this.lvDepartment3.Click += new System.EventHandler(this.lvDepartment_Click);
             // 
             // lvDepartment2
             // 
@@ -75,7 +75,7 @@
             this.lvDepartment2.TabIndex = 6;
             this.lvDepartment2.UseCompatibleStateImageBehavior = false;
             this.lvDepartment2.View = System.Windows.Forms.View.List;
-            this.lvDepartment2.Click += new System.EventHandler(this.lvDepartment2_Click);
+            this.lvDepartment2.Click += new System.EventHandler(this.lvDepartment_Click);
             // 
             // lvDepartment1
             // 
@@ -87,7 +87,7 @@
             this.lvDepartment1.TabIndex = 7;
             this.lvDepartment1.UseCompatibleStateImageBehavior = false;
             this.lvDepartment1.View = System.Windows.Forms.View.List;
-            this.lvDepartment1.Click += new System.EventHandler(this.lvDepartment1_Click);
+            this.lvDepartment1.Click += new System.EventHandler(this.lvDepartment_Click);
             // 
             // btnJoinDepartment
             // 
@@ -220,7 +220,6 @@
             this.btn2v1.TabIndex = 24;
             this.btn2v1.Text = "<< Change";
             this.btn2v1.UseVisualStyleBackColor = true;
-            this.btn2v1.Click += new System.EventHandler(this.btn1v2left_Click);
             // 
             // btn1Quit
             // 
@@ -231,7 +230,7 @@
             this.btn1Quit.TabIndex = 25;
             this.btn1Quit.Text = "Quit";
             this.btn1Quit.UseVisualStyleBackColor = true;
-            this.btn1Quit.Click += new System.EventHandler(this.btn1Quit_Click);
+            this.btn1Quit.Click += new System.EventHandler(this.btnQuit_Click);
             // 
             // btn2Quit
             // 
@@ -242,6 +241,7 @@
             this.btn2Quit.TabIndex = 28;
             this.btn2Quit.Text = "Quit";
             this.btn2Quit.UseVisualStyleBackColor = true;
+            this.btn2Quit.Click += new System.EventHandler(this.btnQuit_Click);
             // 
             // btn3v2
             // 
@@ -301,6 +301,7 @@
             this.btn3Quit.TabIndex = 32;
             this.btn3Quit.Text = "Quit";
             this.btn3Quit.UseVisualStyleBackColor = true;
+            this.btn3Quit.Click += new System.EventHandler(this.btnQuit_Click);
             // 
             // Form1
             // 
