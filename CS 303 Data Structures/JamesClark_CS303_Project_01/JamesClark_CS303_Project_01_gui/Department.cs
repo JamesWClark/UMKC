@@ -4,6 +4,7 @@ using System.Collections.Generic;
 namespace JamesClark_CS303_Project_01_gui {
     class Department {
 
+        private const int SALARY_RATE = 1000;
         public Guid DepartmentID { get; set; }
         public string DepartmentName { get; set; }
         public Queue<Executive> Executives = new Queue<Executive>();
@@ -54,6 +55,22 @@ namespace JamesClark_CS303_Project_01_gui {
             }
             Payroll();
         }
+        public void Quit(int index) {
+            int salary = SALARY_RATE * Executives.Count;
+            for (int i = 0; i < index; i++) {
+                Executive exec = Executives.Dequeue();
+                salary -= SALARY_RATE;
+                exec.Salary = salary; ;
+                Executives.Enqueue(exec);
+            }
+            Executives.Dequeue();
+            for (int i = index; i < Executives.Count; i++) {
+                Executive exec = Executives.Dequeue();
+                salary -= SALARY_RATE;
+                exec.Salary = salary;
+                Executives.Enqueue(exec);
+            }
+        }
         /// <summary>
         /// Moves an Executive out of the current department, into a new department
         /// </summary>
@@ -67,10 +84,11 @@ namespace JamesClark_CS303_Project_01_gui {
             //update payroll
             Payroll();
         }
+        
         /// <summary>
         /// Updates payroll by iterating members of the Queue.
         /// </summary>
-        /// <remarks>An Executive is paid $1000 for themself and every Executive lower in the Queue priority.</remarks>
+        /// <remarks>An Executive is paid SALARY_RATE for themself and every Executive lower in the Queue priority.</remarks>
         public void Payroll() {
             //number of elements in queue
             int count = Executives.Count;
@@ -78,7 +96,7 @@ namespace JamesClark_CS303_Project_01_gui {
             Queue<Executive>.Enumerator enumerator = Executives.GetEnumerator();
             while (enumerator.MoveNext()) {
                 //update salary
-                enumerator.Current.Salary = 1000 * count--;
+                enumerator.Current.Salary = SALARY_RATE * count--;
             }
         }
         /// <summary>

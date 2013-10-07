@@ -218,14 +218,8 @@ namespace JamesClark_CS303_Project_01_gui {
                     break;
             }
             try {
-                //get the selected Executive from the related Queue
-                Queue<Executive>.Enumerator enumerator = departments[index].Executives.GetEnumerator();
-                for (int i = 0; i <= listView.SelectedIndices[0]; i++) {
-                    enumerator.MoveNext();
-                }
-                Executive exec = enumerator.Current;
                 //call Department.Quit to remove the executive from the queue
-                departments[index].Quit(exec);
+                departments[index].Quit(listView.SelectedIndices[0]);
                 //update the list view
                 ListExecutives(departments[index].Executives, listView);
             } catch (IndexOutOfRangeException) {
