@@ -1,11 +1,9 @@
 ﻿using System;
 
 namespace JamesClark_CS303_Project_01_gui {
-    class Executive {
+    class Executive : Person {
 
         public Guid EmployeeID { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
         public float Salary { get; set; }
 
         /// <summary>

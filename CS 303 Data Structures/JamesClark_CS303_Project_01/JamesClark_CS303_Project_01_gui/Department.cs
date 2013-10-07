@@ -42,18 +42,21 @@ namespace JamesClark_CS303_Project_01_gui {
         public void Quit(Executive executive) {
             //number of elements in queue
             int count = Executives.Count;
+            int salary = SALARY_RATE * count;
             //evaluate every element in the queue
             for (int i = 0; i < count; i++) {
                 //remove the first item in the queue
                 Executive current = Executives.Dequeue();
                 //if not a match, return the item to the end of the queue
                 if (current.EmployeeID != executive.EmployeeID) {
+                    current.Salary = salary;
                     Executives.Enqueue(current);
                 }
+                salary -= SALARY_RATE;
                 //if a match is found, the item will not be returned to the queue, thus removing it permanently
-                //when the loop finishes, all elements will be in the original position except that which was removed
+                
             }
-            Payroll();
+            //when the loop finishes, all elements will be correctly ordered with accurate salary
         }
         public void Quit(int index) {
             int salary = SALARY_RATE * Executives.Count;
@@ -81,8 +84,6 @@ namespace JamesClark_CS303_Project_01_gui {
             this.Quit(executive);
             //add exectuvie to target department
             department.Join(executive);
-            //update payroll
-            Payroll();
         }
         
         /// <summary>

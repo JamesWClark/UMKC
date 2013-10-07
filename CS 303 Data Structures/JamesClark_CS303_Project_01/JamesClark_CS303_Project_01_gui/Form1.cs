@@ -34,20 +34,20 @@ namespace JamesClark_CS303_Project_01_gui {
             departments[1] = one;
             departments[2] = two;
             //list executives in listview containers
-            ListExecutives(zero.Executives, lvDepartment1);
-            ListExecutives(one.Executives, lvDepartment2);
-            ListExecutives(two.Executives, lvDepartment3);
+            ListExecutives(zero, lvDepartment1);
+            ListExecutives(one, lvDepartment2);
+            ListExecutives(two, lvDepartment3);
         }
         /// <summary>
         /// Display all executives in a queue, given a listview container.
         /// </summary>
         /// <param name="executives"></param>
         /// <param name="listView"></param>
-        private void ListExecutives(Queue<Executive> executives, ListView listView) {
+        private void ListExecutives(Department department, ListView listView) {
             //clear the list to prevent scrolling duplicates
             listView.Clear();
             //use enumeration to add items from the queue to the list
-            Queue<Executive>.Enumerator enumerator = executives.GetEnumerator();
+            Queue<Executive>.Enumerator enumerator = department.Executives.GetEnumerator();
             while (enumerator.MoveNext()) {
                 listView.Items.Add(enumerator.Current.ToString());
             }
@@ -111,21 +111,24 @@ namespace JamesClark_CS303_Project_01_gui {
                         switch (rb.Name) {
                             case "rbDepartment1":
                                 departments[0].Join(new Executive(txtFirstName.Text, txtLastName.Text, Guid.NewGuid()));
-                                ListExecutives(departments[0].Executives, lvDepartment1);
+                                ListExecutives(departments[0], lvDepartment1);
                                 break;
                             case "rbDepartment2":
                                 departments[1].Join(new Executive(txtFirstName.Text, txtLastName.Text, Guid.NewGuid()));
-                                ListExecutives(departments[1].Executives, lvDepartment2);
+                                ListExecutives(departments[1], lvDepartment2);
                                 break;
                             case "rbDepartment3":
                                 departments[2].Join(new Executive(txtFirstName.Text, txtLastName.Text, Guid.NewGuid()));
-                                ListExecutives(departments[2].Executives, lvDepartment3);
+                                ListExecutives(departments[2], lvDepartment3);
                                 break;
                         }
                         
                     }
                 }
             }
+            //clear the text boxes for a new entry
+            txtFirstName.Clear();
+            txtLastName.Clear();
         }
         /// <summary>
         /// This event fires when one of the Change buttons is clicked.
@@ -180,8 +183,8 @@ namespace JamesClark_CS303_Project_01_gui {
                 //call the Department.Change method
                 departments[fromIndex].Change(exec, departments[toIndex]);
                 //update the list views
-                ListExecutives(departments[fromIndex].Executives, listFrom);
-                ListExecutives(departments[toIndex].Executives, listTo);
+                ListExecutives(departments[fromIndex], listFrom);
+                ListExecutives(departments[toIndex], listTo);
             } catch (ArgumentException) {
                 //this catches an error that will throw if one of the list views does not have a selected item when a change button is clicked
                 //the ValidateItemSelected method above will show a visual representation of this error
@@ -221,7 +224,7 @@ namespace JamesClark_CS303_Project_01_gui {
                 //call Department.Quit to remove the executive from the queue
                 departments[index].Quit(listView.SelectedIndices[0]);
                 //update the list view
-                ListExecutives(departments[index].Executives, listView);
+                ListExecutives(departments[index], listView);
             } catch (IndexOutOfRangeException) {
                 //this won't happen unless another developer changes the ID of one of the quit buttons
             } catch (ArgumentException) {
