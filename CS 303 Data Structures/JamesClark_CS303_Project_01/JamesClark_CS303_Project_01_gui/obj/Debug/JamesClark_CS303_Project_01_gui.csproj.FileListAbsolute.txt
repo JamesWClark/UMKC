@@ -13,3 +13,4 @@ C:\LocalStorage\UMKC\CS 303 Data Structures\JamesClark_CS303_Project_01\JamesCla
 C:\LocalStorage\UMKC\CS 303 Data Structures\JamesClark_CS303_Project_01\JamesClark_CS303_Project_01_gui\obj\Debug\JamesClark_CS303_Project_01_gui.csproj.GenerateResource.Cache
 C:\LocalStorage\UMKC\CS 303 Data Structures\JamesClark_CS303_Project_01\JamesClark_CS303_Project_01_gui\obj\Debug\JamesClark_CS303_Project_01_gui.exe
 C:\LocalStorage\UMKC\CS 303 Data Structures\JamesClark_CS303_Project_01\JamesClark_CS303_Project_01_gui\obj\Debug\JamesClark_CS303_Project_01_gui.pdb
+C:\LocalStorage\UMKC\CS 303 Data Structures\JamesClark_CS303_Project_01\JamesClark_CS303_Project_01_gui\obj\Debug\JamesClark_CS303_Project_01_gui.csprojResolveAssemblyReference.cache

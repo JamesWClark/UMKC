@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace JamesClark_CS303_Project_01_gui {
     class Executive {

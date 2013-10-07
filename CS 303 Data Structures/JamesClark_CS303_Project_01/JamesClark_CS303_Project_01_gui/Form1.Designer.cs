@@ -287,10 +287,12 @@
             // txtError
             // 
             this.txtError.BackColor = System.Drawing.Color.Red;
+            this.txtError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtError.ForeColor = System.Drawing.Color.White;
             this.txtError.Location = new System.Drawing.Point(15, 90);
             this.txtError.Multiline = true;
             this.txtError.Name = "txtError";
+            this.txtError.ReadOnly = true;
             this.txtError.Size = new System.Drawing.Size(708, 20);
             this.txtError.TabIndex = 31;
             this.txtError.Visible = false;
@@ -329,6 +331,7 @@
             this.Controls.Add(this.lvDepartment1);
             this.Controls.Add(this.lvDepartment2);
             this.Controls.Add(this.lvDepartment3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "James Clark, CS 303, Project 1";
@@ -344,31 +347,31 @@
 
         #endregion
 
-        private System.Windows.Forms.ListView lvDepartment3;
-        private System.Windows.Forms.ListView lvDepartment2;
         private System.Windows.Forms.ListView lvDepartment1;
-        private System.Windows.Forms.Button btnJoinDepartment;
+        private System.Windows.Forms.ListView lvDepartment2;
+        private System.Windows.Forms.ListView lvDepartment3;
         private System.Windows.Forms.TextBox txtFirstName;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtLastName;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtError;
+        private System.Windows.Forms.Panel pnlRadioButtons;
         private System.Windows.Forms.RadioButton rbDepartment1;
         private System.Windows.Forms.RadioButton rbDepartment2;
         private System.Windows.Forms.RadioButton rbDepartment3;
-        private System.Windows.Forms.Panel pnlRadioButtons;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btn1v2;
-        private System.Windows.Forms.Button btn2v1;
-        private System.Windows.Forms.Button btn1Quit;
-        private System.Windows.Forms.Button btn2Quit;
-        private System.Windows.Forms.Button btn3v2;
-        private System.Windows.Forms.Button btn2v3;
         private System.Windows.Forms.Panel pnl1v2;
         private System.Windows.Forms.Panel pnl2v3;
-        private System.Windows.Forms.TextBox txtError;
+        private System.Windows.Forms.Button btn1v2;
+        private System.Windows.Forms.Button btn2v1;
+        private System.Windows.Forms.Button btn2v3;
+        private System.Windows.Forms.Button btn3v2;
+        private System.Windows.Forms.Button btn1Quit;
+        private System.Windows.Forms.Button btn2Quit;
         private System.Windows.Forms.Button btn3Quit;
+        private System.Windows.Forms.Button btnJoinDepartment;
     }
 }
 
