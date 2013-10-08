@@ -36,6 +36,7 @@ namespace JamesClark_CS303_Project_01_gui {
         }
         /// <summary>
         /// Finds an Exeuctive by their ExecutiveID and removes them from the Queue.
+        /// If a match is not found, no error occurs. The queue is simply unchanged.
         /// </summary>
         /// <remarks>Updates payroll.</remarks>
         /// <param name="executive"></param>
@@ -54,25 +55,39 @@ namespace JamesClark_CS303_Project_01_gui {
                 }
                 salary -= SALARY_RATE;
                 //if a match is found, the item will not be returned to the queue, thus removing it permanently
-                
             }
             //when the loop finishes, all elements will be correctly ordered with accurate salary
         }
+        /// <summary>
+        /// Remove the executive at the specified index from the queue.
+        /// </summary>
+        /// <param name="index"></param>
         public void Quit(int index) {
+            //start salary = number of executives in queue times salary rate
             int salary = SALARY_RATE * Executives.Count;
+            //executives in front of the target move to the back
             for (int i = 0; i < index; i++) {
+                //get first in line
                 Executive exec = Executives.Dequeue();
+                //update salary
                 salary -= SALARY_RATE;
                 exec.Salary = salary; ;
+                //move to the back
                 Executives.Enqueue(exec);
             }
+            //the target is removed without replacement
             Executives.Dequeue();
+            //executives behind the target are moved to the back
             for (int i = index; i < Executives.Count; i++) {
+                //get first in line
                 Executive exec = Executives.Dequeue();
+                //update salary
                 salary -= SALARY_RATE;
                 exec.Salary = salary;
+                //move to the back
                 Executives.Enqueue(exec);
             }
+            //order and payroll are restored
         }
         /// <summary>
         /// Moves an Executive out of the current department, into a new department
