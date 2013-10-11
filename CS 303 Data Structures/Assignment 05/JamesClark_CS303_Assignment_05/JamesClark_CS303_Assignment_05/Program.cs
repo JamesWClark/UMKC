@@ -3,22 +3,20 @@
 namespace JamesClark_CS303_Assignment_05 {
     class Program {
 
-        
+        static int indexPenny;
+        static int indexNickel;
+        static int indexDime;
+        static int indexQuarter;
+
+        static int cents;
 
         static void Main(string[] args) {
-
-            int cents = 0;
 
             while (!int.TryParse(GetCents(), out cents)) {
                 Console.WriteLine("\nEnter the value in cents (integers only, no decimals).\n");
             }
 
-            string coins = string.Empty;
-            for (int i = 0; i < cents; i++) {
-                coins += 'P';
-            }
-
-            GiveCoins(coins);
+            GiveCoins(string.Empty);
         }
 
         static string GetCents() {
@@ -28,36 +26,13 @@ namespace JamesClark_CS303_Assignment_05 {
 
         static void GiveCoins(string coins) {
 
-            Console.WriteLine(coins);
-            
-            //turn pennies into nickels
-            if (coins.EndsWith("PPPPP")) {
-                coins = coins.Remove(coins.Length - 5);
-                coins = coins.Insert(0, "N");
-                GiveCoins(coins);
-            }
-            //turn nickels into dimes
-            else if (coins.Contains("NN")) {
-                int index = coins.IndexOf("NN");
-                coins = coins.Remove(index,2);
-                coins = coins.Insert(index, "D");
-                GiveCoins(coins);
-            }
-            //turn 2 dimes, 1 nickel into quarter
-            else if (coins.Contains("DDN")) {
-                int index = coins.IndexOf("DDN");
-                coins = coins.Remove(index, 3);
-                coins = coins.Insert(index, "Q");
-                GiveCoins(coins);
-            }
-            //turn 1 quarter into pennies, 
-        }
-
         //do
 
             //fill with pennies
+            FillCoins('P', ref coins);
 
             //swap a nickel
+            SwapCoin('N', ref coins);
 
         //until full of nickels
 
@@ -110,5 +85,69 @@ namespace JamesClark_CS303_Assignment_05 {
             //until full of dimes
         
         //until full of quarters
+        
+        }
+        static void FillCoins(char denomination, ref string coins) {
+            switch (denomination) {
+                case 'P':
+                    int total = CalcTotal(coins);
+                    coins = coins.Replace("P",string.Empty);
+                    for (int i = 0; i < cents - total; i++) {
+                        coins += "P";
+                    }
+                    break;
+                case 'N':
+                    break;
+                case 'D':
+                    break;
+                case 'Q':
+                    break;
+            }
+            Console.WriteLine(coins);
+        }
+        static void SwapCoin(char denomination, ref string coins) {
+            switch (denomination) {
+                case 'P':
+                    break;
+                case 'N':
+                    int index = coins.IndexOf("PPPPP");
+                    if (index != -1) {
+                        coins = coins.Remove(index, 5);
+                        coins = coins.Insert(index, "N");
+                        Console.WriteLine(coins);
+                        SwapCoin('N', ref coins);
+                    } else {
+                        SwapCoin('D', ref coins);
+                    }
+                    break;
+                case 'D':
+                    break;
+                case 'Q':
+                    break;
+            }
+            
+        }
+        static int CalcTotal(string coins) {
+            int given = 0;
+            foreach (char coin in coins) {
+                switch (coin) {
+                    case 'P':
+                        given += 1;
+                        break;
+                    case 'N':
+                        given += 5;
+                        break;
+                    case 'D':
+                        given += 10;
+                        break;
+                    case 'Q':
+                        given += 25;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            return given;
+        }
     }
 }
