@@ -3,68 +3,112 @@
 namespace JamesClark_CS303_Assignment_05 {
     class Program {
 
-        static Decimal owed = 0;
-        static Decimal given = 0;
+        
 
         static void Main(string[] args) {
-            Decimal amount;
-            while (!Decimal.TryParse(GetMoney(), out amount)) {
-                Console.WriteLine("\nInvalid amount. Try again.\n");
+
+            int cents = 0;
+
+            while (!int.TryParse(GetCents(), out cents)) {
+                Console.WriteLine("\nEnter the value in cents (integers only, no decimals).\n");
             }
-            amount = Decimal.Round(amount, 2);
-            owed = Decimal.Parse(amount.ToString().Substring(amount.ToString().Length - 3));
 
-            //termination case = greatest quantity quarters that will fit
-            //Console.WriteLine((int)(.76 / .25));
+            string coins = string.Empty;
+            for (int i = 0; i < cents; i++) {
+                coins += 'P';
+            }
 
-            GiveCoins(string.Empty);
+            GiveCoins(coins);
         }
 
-        //mod Q then D then N then P to determine greatest quantity of highest coin that will fit
-        //example: .76 / .25 = 
-
-        static string GetMoney() {
-            Console.Write("Give me your money: ");
+        static string GetCents() {
+            Console.Write("Enter a value in cents: ");
             return Console.ReadLine();
         }
 
         static void GiveCoins(string coins) {
-            given = CalcTotal(coins);
-            if (given < owed) {
-                //give out pennies
-                coins += 'P';
-                GiveCoins(coins);
-            } else if (given == owed) {
-                Console.WriteLine(coins);
-                coins.Replace("PPPPP", "N");
-            }
-            //turn pennies into nickels
-            
 
-            //turn nickels into dimes
-            //turn dimes into quarters
-        }
-        static decimal CalcTotal(string coins) {
-            given = 0;
-            foreach (char coin in coins) {
-                switch (coin) {
-                    case 'P':
-                        given += 0.01m;
-                        break;
-                    case 'N':
-                        given += 0.05m;
-                        break;
-                    case 'D':
-                        given += 0.1m;
-                        break;
-                    case 'Q':
-                        given += 0.25m;
-                        break;
-                    default:
-                        break;
-                }
+            Console.WriteLine(coins);
+            
+            //turn pennies into nickels
+            if (coins.EndsWith("PPPPP")) {
+                coins = coins.Remove(coins.Length - 5);
+                coins = coins.Insert(0, "N");
+                GiveCoins(coins);
             }
-            return given;
+            //turn nickels into dimes
+            else if (coins.Contains("NN")) {
+                int index = coins.IndexOf("NN");
+                coins = coins.Remove(index,2);
+                coins = coins.Insert(index, "D");
+                GiveCoins(coins);
+            }
+            //turn 2 dimes, 1 nickel into quarter
+            else if (coins.Contains("DDN")) {
+                int index = coins.IndexOf("DDN");
+                coins = coins.Remove(index, 3);
+                coins = coins.Insert(index, "Q");
+                GiveCoins(coins);
+            }
+            //turn 1 quarter into pennies, 
         }
+
+        //do
+
+            //fill with pennies
+
+            //swap a nickel
+
+        //until full of nickels
+
+
+        //do
+
+            //swap a dime
+
+            //fill with pennies
+
+            //do
+
+                //swap a nickel
+
+                //fill with nickels
+            
+            //until full of nickels
+
+        //until full of dimes
+
+
+        //do
+
+            //swap a quarter
+
+            //fill with pennies
+
+            //do
+
+                //swap a nickel
+
+                //fill with nickels
+           
+            //until full of nickels
+
+            //do
+
+                //swap a dime
+
+                //fill with pennies
+
+                //do
+
+                    //swap a nickel
+
+                    //fill with nickels
+
+                //until full of nickels
+
+            //until full of dimes
+        
+        //until full of quarters
     }
 }
