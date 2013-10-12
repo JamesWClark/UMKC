@@ -1,0 +1,5 @@
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 05\JamesClark_CS303_Assignment_05\TowersOfHanoi\bin\Debug\TowersOfHanoi.exe
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 05\JamesClark_CS303_Assignment_05\TowersOfHanoi\bin\Debug\TowersOfHanoi.pdb
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 05\JamesClark_CS303_Assignment_05\TowersOfHanoi\obj\Debug\TowersOfHanoi.csprojResolveAssemblyReference.cache
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 05\JamesClark_CS303_Assignment_05\TowersOfHanoi\obj\Debug\TowersOfHanoi.exe
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 05\JamesClark_CS303_Assignment_05\TowersOfHanoi\obj\Debug\TowersOfHanoi.pdb

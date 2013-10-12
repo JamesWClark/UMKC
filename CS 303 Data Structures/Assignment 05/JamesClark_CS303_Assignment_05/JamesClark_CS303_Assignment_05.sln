@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JamesClark_CS303_Assignment_05", "JamesClark_CS303_Assignment_05\JamesClark_CS303_Assignment_05.csproj", "{3FD7B5DE-30C4-4DF2-8F2C-5959D3BBCDF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TowersOfHanoi", "TowersOfHanoi\TowersOfHanoi.csproj", "{02D3B10A-4AE4-4D79-BB73-BDB9E189040D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuffmanTree", "HuffmanTree\HuffmanTree.csproj", "{7142655F-02C3-4C3B-9EC0-254F55E7B8F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{3FD7B5DE-30C4-4DF2-8F2C-5959D3BBCDF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FD7B5DE-30C4-4DF2-8F2C-5959D3BBCDF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FD7B5DE-30C4-4DF2-8F2C-5959D3BBCDF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02D3B10A-4AE4-4D79-BB73-BDB9E189040D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02D3B10A-4AE4-4D79-BB73-BDB9E189040D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02D3B10A-4AE4-4D79-BB73-BDB9E189040D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02D3B10A-4AE4-4D79-BB73-BDB9E189040D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7142655F-02C3-4C3B-9EC0-254F55E7B8F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7142655F-02C3-4C3B-9EC0-254F55E7B8F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7142655F-02C3-4C3B-9EC0-254F55E7B8F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7142655F-02C3-4C3B-9EC0-254F55E7B8F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

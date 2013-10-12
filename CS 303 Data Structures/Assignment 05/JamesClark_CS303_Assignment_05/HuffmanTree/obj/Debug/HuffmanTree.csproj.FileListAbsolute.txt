@@ -1,0 +1,5 @@
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 05\JamesClark_CS303_Assignment_05\HuffmanTree\bin\Debug\HuffmanTree.exe
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 05\JamesClark_CS303_Assignment_05\HuffmanTree\bin\Debug\HuffmanTree.pdb
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 05\JamesClark_CS303_Assignment_05\HuffmanTree\obj\Debug\HuffmanTree.csprojResolveAssemblyReference.cache
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 05\JamesClark_CS303_Assignment_05\HuffmanTree\obj\Debug\HuffmanTree.exe
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 05\JamesClark_CS303_Assignment_05\HuffmanTree\obj\Debug\HuffmanTree.pdb
