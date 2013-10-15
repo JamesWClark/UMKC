@@ -50,10 +50,10 @@ namespace JamesClark_CS303_Project_01_gui {
                 Executive current = Executives.Dequeue();
                 //if not a match, return the item to the end of the queue
                 if (current.EmployeeID != executive.EmployeeID) {
+                    salary -= SALARY_RATE;
                     current.Salary = salary;
                     Executives.Enqueue(current);
                 }
-                salary -= SALARY_RATE;
                 //if a match is found, the item will not be returned to the queue, thus removing it permanently
             }
             //when the loop finishes, all elements will be correctly ordered with accurate salary
