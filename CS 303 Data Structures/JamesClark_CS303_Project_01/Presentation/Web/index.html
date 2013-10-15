@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="kinetic-v4.7.2.min.js"></script>
+</head>
+<body>
+    <div id="container" style="float:left; border: solid gray 1px; height: 800px; width: 600px;"></div>
+
+    <div id="controls" style="float:left; margin-left:14px;">
+        <input id="btnPush" type="button" value="Push" onclick="push();" />
+        <br />
+        <input id="btnPop" type="button" value="Pop" onclick="pop();" />
+        <br />
+        <input id="btnPopPush" type="button" value="Pop to Push" onclick="popToPush();" />
+    </div>
+
+    <script defer="defer">
+
+        var speed = 0.3; //seconds
+        var colorWheel = 0;
+        var idCount = 0;
+        var numBoxes = 0;
+        var startX = 100;
+        var startY = 500;
+        var boxH = 75;
+        var boxW = 200;
+        var colors = ["lime", "yellow", "orange", "lightblue", "pink"];
+        var names = ["Mohammad", "Hussam", "James", "Joe", "Chris"];
+        var rects = [];
+
+        var stage = new Kinetic.Stage({
+            container: "container",
+            width: 600,
+            height: 800
+        });
+        var layer = new Kinetic.Layer();
+
+
+        stage.add(layer);
+
+        function push() {
+            var rect = new Kinetic.Rect({
+                x: startX,
+                y: startY - (100 * numBoxes),
+                fill: colorwheel(),
+                width: boxW,
+                height: boxH
+            });
+            rects.push(rect);
+            numBoxes++;
+            layer.add(rect);
+            layer.draw();
+        }
+
+        function pop() {
+            for (var i = 0; i < rects.length; i++) {
+                var shape = rects[i];
+                var tween = new Kinetic.Tween({
+                    node: shape,
+                    duration: speed,
+                    x: shape.getX(),
+                    y: shape.getY() + 100,
+                });
+                tween.play();
+            }
+            setTimeout(function () {
+                var remove = rects.shift();
+                remove.destroy();
+                numBoxes--;
+            }, 100 * speed + 50);
+        }
+
+        function popToPush() {
+            //shift down
+            for (var i = 0; i < rects.length; i++) {
+                var shape = rects[i];
+                var tween = new Kinetic.Tween({
+                    node: shape,
+                    duration: 0.5,
+                    x: shape.getX(),
+                    y: shape.getY() + 100,
+                });
+                tween.play();
+            }
+            //push to pop
+            var move = rects.shift();
+            var tween = new Kinetic.Tween({
+                node: move,
+                duration: 2 * speed,
+                x: startX,
+                y: startY - 100 * (numBoxes-1),
+                //rotation: Math.PI * 2
+            });
+            tween.play();
+            rects.push(move);
+        }
+
+        function colorwheel() {
+            if (colorWheel >= colors.length)
+                colorWheel = 0;
+            return colors[colorWheel++];
+        }
+
+        /*
+        for (var i = 0; i < 5; i++) {
+            var rect = new Kinetic.Rect({
+                id: "rect" + i,
+                x: 100,
+                y: 100 + 100*i,
+                fill: colors[i],
+                width: boxW,
+                height: boxH
+            });
+            layer.add(rect);
+        }
+
+
+        
+
+        var tween = new Kinetic.Tween({
+            node: rect,
+            duration: 0.5,
+            x: 200,
+            y: 200
+        });
+
+        stage.add(layer);
+
+        // dequeue 
+        var countRemoved = 0;
+        function dequeue() {
+            for (var i = 0; i < 5 - countRemoved; i++) {
+                var shape = stage.find('#rect' + i)[0];
+                var tween = new Kinetic.Tween({
+                    node: shape,
+                    duration: 0.5,
+                    x: shape.getX(),
+                    y: shape.getY() + 100,
+                });
+                tween.play();
+            }
+            setTimeout(destroyRect, 550);
+        }
+        function destroyRect() {
+            var remove = stage.find('#rect' + (4 - countRemoved))[0];
+            remove.destroy();
+            countRemoved = countRemoved + 1;
+        }
+
+        // requeue 
+        var requeueIndex = 4;
+        function shift() {
+            for (var i = 0; i < 5; i++) {
+                var shape = stage.find('#rect' + i)[0];
+                var tween = new Kinetic.Tween({
+                    node: shape,
+                    duration: 0.5,
+                    x: shape.getX(),
+                    y: shape.getY() + 100,
+                });
+                tween.play();
+            }
+        }
+        function requeue() {
+            shift();
+            var shape = stage.find('#rect' + requeueIndex)[0];
+            var tween = new Kinetic.Tween({
+                node: shape,
+                duration: 1,
+                x: 100,
+                y: 100,
+                rotation: Math.PI * 2
+            });
+            tween.play();
+            requeueIndex--;
+        }
+        */
+    </script>
+</body>
+</html>

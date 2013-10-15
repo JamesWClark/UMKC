@@ -1,0 +1,5 @@
+C:\LocalStorage\UMKC\CS 303 Data Structures\JamesClark_CS303_Project_01\Presentation\bin\Presentation.dll
+C:\LocalStorage\UMKC\CS 303 Data Structures\JamesClark_CS303_Project_01\Presentation\bin\Presentation.pdb
+C:\LocalStorage\UMKC\CS 303 Data Structures\JamesClark_CS303_Project_01\Presentation\obj\Debug\Presentation.csprojResolveAssemblyReference.cache
+C:\LocalStorage\UMKC\CS 303 Data Structures\JamesClark_CS303_Project_01\Presentation\obj\Debug\Presentation.dll
+C:\LocalStorage\UMKC\CS 303 Data Structures\JamesClark_CS303_Project_01\Presentation\obj\Debug\Presentation.pdb
