@@ -1,0 +1,5 @@
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 04\Asmt4_VerifyGrade\Asmt4_VerifyGrade\bin\Debug\Asmt4_VerifyGrade.exe
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 04\Asmt4_VerifyGrade\Asmt4_VerifyGrade\bin\Debug\Asmt4_VerifyGrade.pdb
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 04\Asmt4_VerifyGrade\Asmt4_VerifyGrade\obj\Debug\Asmt4_VerifyGrade.csprojResolveAssemblyReference.cache
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 04\Asmt4_VerifyGrade\Asmt4_VerifyGrade\obj\Debug\Asmt4_VerifyGrade.exe
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 04\Asmt4_VerifyGrade\Asmt4_VerifyGrade\obj\Debug\Asmt4_VerifyGrade.pdb
