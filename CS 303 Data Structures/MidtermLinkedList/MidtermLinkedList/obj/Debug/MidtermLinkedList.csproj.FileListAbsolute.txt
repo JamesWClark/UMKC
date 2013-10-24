@@ -1,0 +1,5 @@
+C:\LocalStorage\UMKC\CS 303 Data Structures\MidtermLinkedList\MidtermLinkedList\bin\Debug\MidtermLinkedList.exe
+C:\LocalStorage\UMKC\CS 303 Data Structures\MidtermLinkedList\MidtermLinkedList\bin\Debug\MidtermLinkedList.pdb
+C:\LocalStorage\UMKC\CS 303 Data Structures\MidtermLinkedList\MidtermLinkedList\obj\Debug\MidtermLinkedList.csprojResolveAssemblyReference.cache
+C:\LocalStorage\UMKC\CS 303 Data Structures\MidtermLinkedList\MidtermLinkedList\obj\Debug\MidtermLinkedList.exe
+C:\LocalStorage\UMKC\CS 303 Data Structures\MidtermLinkedList\MidtermLinkedList\obj\Debug\MidtermLinkedList.pdb
