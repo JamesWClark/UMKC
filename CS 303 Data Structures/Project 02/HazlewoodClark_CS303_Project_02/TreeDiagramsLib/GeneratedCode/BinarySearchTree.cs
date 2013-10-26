@@ -9,30 +9,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class BinaryTree
+public class BinarySearchTree : BinaryTree
 {
-	public virtual BinaryTreeNode BinaryTreeNode
-	{
-		get;
-		set;
-	}
-
-	public virtual void GetLeftSubtree()
+	public virtual void Insert()
 	{
 		throw new System.NotImplementedException();
 	}
 
-	public virtual void GetRightSubtree()
+	public virtual void Erase()
 	{
 		throw new System.NotImplementedException();
 	}
 
-	public virtual void GetData()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void ToString()
+	public virtual void Find()
 	{
 		throw new System.NotImplementedException();
 	}

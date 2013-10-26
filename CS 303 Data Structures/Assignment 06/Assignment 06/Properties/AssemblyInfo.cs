@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TreeDiagramsLib")]
+[assembly: AssemblyTitle("Assignment 06")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TreeDiagramsLib")]
+[assembly: AssemblyProduct("Assignment 06")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("80f69da5-af21-41cb-adfe-59fc1b9dc4e6")]
+[assembly: Guid("d86674d5-1e94-41ad-9e76-5ea2cb9fe467")]
 
 // Version information for an assembly consists of the following four values:
 //
