@@ -3172,6 +3172,56 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="486f2d32-eca4-4fa0-a9bc-32913f7a4432"
+            name="BinaryTree"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3d7f75ce-dee2-4cfc-8f00-19c51bc778b9"
+                  name="root"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="62065cb9-767b-4886-b242-820652578581"
+                      LastKnownName="BinaryTreeNode"
+                      LastKnownLocation="TreeDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="846c6cf1-9e7e-4c48-930c-f5a1f0de55d3"
+                  name="leftChild"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="434ed722-b2f5-4865-92ed-2c67b4e6de4a"
+                      LastKnownName="BinaryTree"
+                      LastKnownLocation="TreeDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ae8f95ef-9d73-427e-b132-c32f3626d89c"
+                  name="rightChild"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="434ed722-b2f5-4865-92ed-2c67b4e6de4a"
+                      LastKnownName="BinaryTree"
+                      LastKnownLocation="TreeDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -3980,6 +4030,13 @@
           </operation>
         </ownedOperations>
       </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="8b79aa77-72e3-4b50-b572-e1ae31b30b49"
+        name="INodeFactory"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

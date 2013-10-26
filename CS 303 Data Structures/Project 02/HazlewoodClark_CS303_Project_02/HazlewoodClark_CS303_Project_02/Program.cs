@@ -1,4 +1,7 @@
-﻿using System;
+﻿//gotta start here:
+//http://msdn.microsoft.com/en-us/library/ms379572(v=vs.80).aspx
+
+using System;
 using System.IO;
 
 namespace HazlewoodClark_CS303_Project_02 {
@@ -6,8 +9,7 @@ namespace HazlewoodClark_CS303_Project_02 {
 
         static void Main(string[] args) {
 
-            BinaryTreeNode root = new BinaryTreeNode();
-            BinarySearchTree tree = new BinarySearchTree(root);
+            BinarySearchTree tree = new BinarySearchTree();
             
             using (StreamReader sr = new StreamReader("MorseCode.csv")) {
                 while (!sr.EndOfStream) {
@@ -18,7 +20,7 @@ namespace HazlewoodClark_CS303_Project_02 {
 
                     BinaryTreeNode node = new BinaryTreeNode(morseCode);
 
-                    
+                    tree.Insert(node);
 
                     Console.WriteLine(morseCode.Letter + morseCode.Code);
 

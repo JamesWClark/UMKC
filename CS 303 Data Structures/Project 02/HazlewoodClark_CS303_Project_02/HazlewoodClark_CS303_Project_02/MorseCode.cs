@@ -12,15 +12,8 @@ public class MorseCode : IComparable {
     private const char DASH = '–';
     private const char DOT = '*';
 
-    public virtual Char Letter {
-        get;
-        set;
-    }
-
-    public virtual string Code {
-        get;
-        set;
-    }
+    public Char Letter { get; set; }
+    public string Code { get; set; }
 
     public MorseCode() {
     }
@@ -30,10 +23,10 @@ public class MorseCode : IComparable {
         this.Code = code;
     }
 
-    public virtual int CompareTo(Object obj) {
-
-        MorseCode target = (MorseCode)obj;
+    public int CompareTo(Object obj) {
         
+        MorseCode target = (MorseCode)obj;
+                
         int length = 0;
 
         if (this.Code.Length == target.Code.Length) {
@@ -43,6 +36,11 @@ public class MorseCode : IComparable {
         } else {
             length = target.Code.Length;
         }
+
+        if (length == 0) {
+
+        }
+
         //compare for the length of the shortest code
         for (int i = 0; i < length; i++) {
             if (this.Code[i] == target.Code[i]) {
@@ -57,22 +55,5 @@ public class MorseCode : IComparable {
         }
         throw new Exception("Can't compare these codes.");
     }
-
-    public virtual BitArray ToBitArray() {
-        int size = this.Code.Length;
-        BitArray bits = new BitArray(size);
-        for (int i = 0; i < size; i++) {
-            switch (this.Code[i]) {
-                case DASH:
-                    bits[i] = true;
-                    break;
-                case DOT:
-                    bits[i] = false;
-                    break;
-            }
-        }
-        return bits;
-    }
-
 }
 

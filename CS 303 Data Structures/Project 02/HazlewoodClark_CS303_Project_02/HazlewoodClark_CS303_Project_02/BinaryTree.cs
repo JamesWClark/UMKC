@@ -10,10 +10,7 @@ using System.Linq;
 using System.Text;
 
 public class BinaryTree {
-    public virtual BinaryTreeNode BinaryTreeNode {
-        get;
-        set;
-    }
+
     public virtual BinaryTreeNode Root {
         get;
         set;
@@ -24,13 +21,16 @@ public class BinaryTree {
     public BinaryTree(BinaryTreeNode root) {
 
     }
+    public BinaryTree(BinaryTreeNode root, BinaryTree leftChild, BinaryTree rightChild) {
 
-    public virtual BinaryTreeNode GetLeftSubtree() {
-        return this.Root.LeftNode;
     }
 
-    public virtual BinaryTreeNode GetRightSubtree() {
-        return this.Root.RightNode;
+    public virtual BinaryTree GetLeftSubtree() {
+        return new BinaryTree(this.Root.LeftNode);
+    }
+
+    public virtual BinaryTree GetRightSubtree() {
+        return new BinaryTree(this.Root.RightNode);
     }
 
     public virtual void GetData() {

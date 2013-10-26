@@ -9,44 +9,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class BinarySearchTree : BinaryTree
-{
+public class BinarySearchTree : BinaryTree {
     public BinarySearchTree() {
 
     }
     public BinarySearchTree(BinaryTreeNode root) {
         this.Root = root;
     }
-	public virtual bool Insert(BinaryTreeNode subtree, BinaryTreeNode node)
-	{
+    public virtual bool Insert(BinaryTreeNode node) {
         //if root is null, replace empty tree with new data leaf
         if (this.Root == null) {
             this.Root = node;
             return true;
         }
-        //reject data if equal
+            //reject data if equal
         else if (node.Data.CompareTo(Root.Data) == 0) {
             return false;
         }
-        //less than
+            //less than
         else if (node.Data.CompareTo(Root.Data) < 1) {
-            return Insert(this.GetLeftSubtree(), node);
+            return new BinarySearchTree(this.Root.LeftNode).Insert(node);
         }
-        //greater than
+            //greater than
         else {
-            return Insert(this.GetRightSubtree(), node);
+            return new BinarySearchTree(this.Root.RightNode).Insert(node);
         }
     }
 
-    public virtual void Erase(BinaryTreeNode node)
-	{
-		throw new System.NotImplementedException();
-	}
+    public virtual void Erase(BinaryTreeNode node) {
+        throw new System.NotImplementedException();
+    }
 
-    public virtual void Find(BinaryTreeNode node)
-	{
-		throw new System.NotImplementedException();
-	}
+    public virtual void Find(BinaryTreeNode node) {
+        throw new System.NotImplementedException();
+    }
 
 }
 

@@ -2299,6 +2299,35 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation Id="5f4185e1-895e-44ff-b869-85d600b412d8" name="BinaryTree" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="486f2d32-eca4-4fa0-a9bc-32913f7a4432" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f52df6ae-ad3d-4e6b-afb3-4151e7bfedc2" name="root" direction="In">
+                  <elementDefinition Id="3d7f75ce-dee2-4cfc-8f00-19c51bc778b9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9f91d39e-c2a2-4feb-a9f8-1463984e2cee" LastKnownName="BinaryTreeNode" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c01cef28-6b43-4522-8f1b-4826db3958da" name="leftChild" direction="In">
+                  <elementDefinition Id="846c6cf1-9e7e-4c48-930c-f5a1f0de55d3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b128a3f3-273e-4e2e-a964-128db030fc98" LastKnownName="BinaryTree" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6879b118-b7bf-48c1-aa27-6439586e9ed1" name="rightChild" direction="In">
+                  <elementDefinition Id="ae8f95ef-9d73-427e-b132-c32f3626d89c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b128a3f3-273e-4e2e-a964-128db030fc98" LastKnownName="BinaryTree" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -2980,6 +3009,16 @@
         <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
       </referencedType>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b128a3f3-273e-4e2e-a964-128db030fc98" name="BinaryTree" isAbstract="false" isLeaf="false" cachedFullName="TreeDiagrams::BinaryTree">
+        <elementDefinition Id="434ed722-b2f5-4865-92ed-2c67b4e6de4a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="c75fec38-8da6-40c2-aab3-854883649473" name="INodeFactory" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8b79aa77-72e3-4b50-b572-e1ae31b30b49" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="16c37bf6-acd9-4de7-a63f-766ef8adecd2" name="TreeDiagrams">
     <elementDefinition Id="8e45ed25-c68f-4b2f-9b0c-ba9ac2ebb2c4" />
