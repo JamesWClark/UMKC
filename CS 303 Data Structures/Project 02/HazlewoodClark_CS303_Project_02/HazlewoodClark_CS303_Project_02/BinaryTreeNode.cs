@@ -9,25 +9,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class BinaryTreeNode
-{
-	public virtual object Data
-	{
-		get;
-		set;
-	}
+public class BinaryTreeNode {
+    public virtual IComparable Data {
+        get;
+        set;
+    }
 
-	public virtual object Left
-	{
-		get;
-		set;
-	}
+    public virtual BinaryTreeNode LeftNode {
+        get;
+        set;
+    }
 
-	public virtual object Right
-	{
-		get;
-		set;
-	}
+    public virtual BinaryTreeNode RightNode {
+        get;
+        set;
+    }
+
+    public BinaryTreeNode() {
+    }
+
+    public BinaryTreeNode(IComparable data) {
+        this.Data = data;
+    }
 
 }
 

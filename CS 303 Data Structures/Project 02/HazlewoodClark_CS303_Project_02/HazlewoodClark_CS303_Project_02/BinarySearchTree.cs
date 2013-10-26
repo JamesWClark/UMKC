@@ -11,17 +11,39 @@ using System.Text;
 
 public class BinarySearchTree : BinaryTree
 {
-	public virtual void Insert()
+    public BinarySearchTree() {
+
+    }
+    public BinarySearchTree(BinaryTreeNode root) {
+        this.Root = root;
+    }
+	public virtual bool Insert(BinaryTreeNode subtree, BinaryTreeNode node)
+	{
+        //if root is null, replace empty tree with new data leaf
+        if (this.Root == null) {
+            this.Root = node;
+            return true;
+        }
+        //reject data if equal
+        else if (node.Data.CompareTo(Root.Data) == 0) {
+            return false;
+        }
+        //less than
+        else if (node.Data.CompareTo(Root.Data) < 1) {
+            return Insert(this.GetLeftSubtree(), node);
+        }
+        //greater than
+        else {
+            return Insert(this.GetRightSubtree(), node);
+        }
+    }
+
+    public virtual void Erase(BinaryTreeNode node)
 	{
 		throw new System.NotImplementedException();
 	}
 
-	public virtual void Erase()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void Find()
+    public virtual void Find(BinaryTreeNode node)
 	{
 		throw new System.NotImplementedException();
 	}
