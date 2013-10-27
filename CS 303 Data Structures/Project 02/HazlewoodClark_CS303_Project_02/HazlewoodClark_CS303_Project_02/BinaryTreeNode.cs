@@ -5,32 +5,48 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-public class BinaryTreeNode {
-    public virtual IComparable Data {
-        get;
-        set;
+public class BinaryTreeNode<T> : Node<T>
+{
+	public BinaryTreeNode() : base() {}
+    public BinaryTreeNode(T data) : base(data, null) {}
+    public BinaryTreeNode(T data, BinaryTreeNode<T> left, BinaryTreeNode<T> right) {
+        base.Value = data;
+        NodeList<T> children = new NodeList<T>(2);
+        children[0] = left;
+        children[1] = right;
+        base.Neighbors = children;
+    }
+    public virtual BinaryTreeNode<T> Left {
+        get {
+            if (base.Neighbors == null) {
+                return null;
+            } else {
+                return (BinaryTreeNode<T>)base.Neighbors[0];
+            }
+        }
+        set {
+            if (base.Neighbors == null) {
+                base.Neighbors = new NodeList<T>(2);
+            }
+            base.Neighbors[0] = value;
+        }
     }
 
-    public virtual BinaryTreeNode LeftNode {
-        get;
-        set;
+    public virtual BinaryTreeNode<T> Right {
+        get {
+            if (base.Neighbors == null) {
+                return null;
+            } else {
+                return (BinaryTreeNode<T>)base.Neighbors[1];
+            }
+        }
+        set {
+            if (base.Neighbors == null) {
+                base.Neighbors = new NodeList<T>(2);
+            }
+            base.Neighbors[1] = value;
+        }
     }
-
-    public virtual BinaryTreeNode RightNode {
-        get;
-        set;
-    }
-
-    public BinaryTreeNode() {
-    }
-
-    public BinaryTreeNode(IComparable data) {
-        this.Data = data;
-    }
-
 }
 

@@ -9,37 +9,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class BinaryTree {
-
-    public virtual BinaryTreeNode Root {
-        get;
-        set;
-    }
+public class BinaryTree<T> {
+    private BinaryTreeNode<T> root;
+    
     public BinaryTree() {
-
-    }
-    public BinaryTree(BinaryTreeNode root) {
-
-    }
-    public BinaryTree(BinaryTreeNode root, BinaryTree leftChild, BinaryTree rightChild) {
-
+        root = null;
     }
 
-    public virtual BinaryTree GetLeftSubtree() {
-        return new BinaryTree(this.Root.LeftNode);
+    public virtual void Clear() {
+        root = null;
     }
 
-    public virtual BinaryTree GetRightSubtree() {
-        return new BinaryTree(this.Root.RightNode);
-    }
+    public virtual BinaryTreeNode<T> Root {
+        get {
+            return root;
+        }
+        set {
+            root = value;
+        }
+    }    
 
-    public virtual void GetData() {
-        throw new System.NotImplementedException();
-    }
-
-    public override string ToString() {
-        throw new System.NotImplementedException();
-    }
+    
 
 }
 
