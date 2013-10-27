@@ -10,7 +10,13 @@ namespace HazlewoodClark_CS303_Project_02 {
         static void Main(string[] args) {
 
             BinaryTree<MorseCode> tree = BuildMorseTree();
-            Console.WriteLine(tree.Root.Right.Right.Left.Value.Letter);
+            tree.PreorderTraversal(tree.Root);
+            Console.WriteLine();
+            tree.InorderTraversal(tree.Root);
+            Console.WriteLine();
+            tree.PostorderTraversal(tree.Root);
+            Console.WriteLine();
+
         }
         static BinaryTree<MorseCode> BuildMorseTree() {
             BinaryTree<MorseCode> tree = new BinaryTree<MorseCode>();
@@ -63,6 +69,16 @@ namespace HazlewoodClark_CS303_Project_02 {
 
             }
         }
-         */ 
+         */
+
+
+        /*
+         
+        If c is a null reference, then exit the algorithm. n is not in the BST.
+        Compare c's value and n's value.
+        If the values are equal, then we found n.
+        If n's value is less than c's then n, if it exists, must be in the c's left subtree. Therefore, return to step 1, letting c be c's left child.
+        If n's value is greater than c's then n, if it exists, must be in the c's right subtree. Therefore, return to step 1, letting c be c's right child.
+         */
     }
 }

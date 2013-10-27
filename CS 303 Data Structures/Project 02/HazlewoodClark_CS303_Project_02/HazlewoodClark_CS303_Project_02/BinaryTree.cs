@@ -27,9 +27,39 @@ public class BinaryTree<T> {
         set {
             root = value;
         }
-    }    
+    }
+    public void PreorderTraversal(BinaryTreeNode<T> current) {
+        if (current != null) {
+            //output value of current node
+            Console.Write(current.Value);
+            //recursively print left and right
+            PreorderTraversal(current.Left);
+            PreorderTraversal(current.Right);
+        }
+    }
 
-    
+    public void InorderTraversal(BinaryTreeNode<T> current) {
+        if (current != null) {
+            //visit left
+            InorderTraversal(current.Left);
+            //print
+            Console.Write(current.Value);
+            //visit right
+            InorderTraversal(current.Right);
+        }
+    }
+
+    public void PostorderTraversal(BinaryTreeNode<T> current) {
+        if (current != null) {
+            //visit left
+            InorderTraversal(current.Left);
+            //visit right
+            InorderTraversal(current.Right);
+            //print
+            Console.Write(current.Value);
+
+        }
+    }
 
 }
 

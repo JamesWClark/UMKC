@@ -23,6 +23,10 @@ public class MorseCode : IComparable {
         this.Code = code;
     }
 
+    public override string ToString() {
+        return this.Letter.ToString();
+    }
+
     public int CompareTo(Object obj) {
         
         MorseCode target = (MorseCode)obj;
