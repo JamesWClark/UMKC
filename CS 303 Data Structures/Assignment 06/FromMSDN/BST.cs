@@ -349,6 +349,11 @@ namespace skmDataStructures
 				return count;
 			}
 		}
+        public virtual Node Root {
+            get {
+                return root;
+            }
+        }
 		#endregion
 	}
 }

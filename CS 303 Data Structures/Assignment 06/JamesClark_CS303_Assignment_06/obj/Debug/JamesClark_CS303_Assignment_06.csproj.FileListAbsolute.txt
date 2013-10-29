@@ -1,0 +1,5 @@
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 06\JamesClark_CS303_Assignment_06\bin\Debug\JamesClark_CS303_Assignment_06.exe
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 06\JamesClark_CS303_Assignment_06\bin\Debug\JamesClark_CS303_Assignment_06.pdb
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 06\JamesClark_CS303_Assignment_06\obj\Debug\JamesClark_CS303_Assignment_06.csprojResolveAssemblyReference.cache
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 06\JamesClark_CS303_Assignment_06\obj\Debug\JamesClark_CS303_Assignment_06.exe
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 06\JamesClark_CS303_Assignment_06\obj\Debug\JamesClark_CS303_Assignment_06.pdb

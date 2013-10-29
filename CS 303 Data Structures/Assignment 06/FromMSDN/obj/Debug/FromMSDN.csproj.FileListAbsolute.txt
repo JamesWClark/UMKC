@@ -1,0 +1,5 @@
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 06\FromMSDN\bin\Debug\FromMSDN.exe
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 06\FromMSDN\bin\Debug\FromMSDN.pdb
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 06\FromMSDN\obj\Debug\FromMSDN.exe
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 06\FromMSDN\obj\Debug\FromMSDN.pdb
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 06\FromMSDN\obj\Debug\FromMSDN.csprojResolveAssemblyReference.cache
