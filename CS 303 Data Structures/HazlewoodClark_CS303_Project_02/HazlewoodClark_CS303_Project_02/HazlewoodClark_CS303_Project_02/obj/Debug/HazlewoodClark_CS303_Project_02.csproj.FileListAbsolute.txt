@@ -1,0 +1,5 @@
+C:\LocalStorage\UMKC\CS 303 Data Structures\Project 02\HazlewoodClark_CS303_Project_02\HazlewoodClark_CS303_Project_02\bin\Debug\HazlewoodClark_CS303_Project_02.exe
+C:\LocalStorage\UMKC\CS 303 Data Structures\Project 02\HazlewoodClark_CS303_Project_02\HazlewoodClark_CS303_Project_02\bin\Debug\HazlewoodClark_CS303_Project_02.pdb
+C:\LocalStorage\UMKC\CS 303 Data Structures\Project 02\HazlewoodClark_CS303_Project_02\HazlewoodClark_CS303_Project_02\obj\Debug\HazlewoodClark_CS303_Project_02.csprojResolveAssemblyReference.cache
+C:\LocalStorage\UMKC\CS 303 Data Structures\Project 02\HazlewoodClark_CS303_Project_02\HazlewoodClark_CS303_Project_02\obj\Debug\HazlewoodClark_CS303_Project_02.exe
+C:\LocalStorage\UMKC\CS 303 Data Structures\Project 02\HazlewoodClark_CS303_Project_02\HazlewoodClark_CS303_Project_02\obj\Debug\HazlewoodClark_CS303_Project_02.pdb

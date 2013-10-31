@@ -1,0 +1,3169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="d153a8b7-cef5-4bb4-85f0-cb01bd56d79f"
+  name="skmDataStructures"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="eace65ed-dbdd-4088-abc6-e389a388c0d5"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DskmDataStructures"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="18b8c11c-0f60-48e7-aafd-e97206466d44"
+        LastKnownName="BinaryTree"
+        LastKnownLocation="Package1_1410.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="14f68960-47c1-45e2-a843-dbd8a3d8059e"
+        name="Node"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="877d9cbd-ca98-4461-ad7a-a80bb2b8bc50"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="001da3d0-2a87-42af-8960-2764efaa8af4"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0f4a2df7-8603-4c48-b2db-70339a9dfce0">
+                <propertyInstance
+                  Id="e5f0d9b4-f77b-4574-a425-63c98c8ee354"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8e096a61-4ee8-489c-ab13-0f705cfb8fca">
+                <propertyInstance
+                  Id="41f35513-dd04-4d92-b52a-9c8029ce76af"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="77a91ba1-9354-4c52-88d3-9bee9a9f808a">
+                <propertyInstance
+                  Id="c3f12f4d-0629-4c29-9dfd-a5f37207f095"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5b049485-220d-432d-8fac-282ec5861d76">
+                <propertyInstance
+                  Id="d88f288d-15da-438f-bb6f-9d19d1676bda"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="48f32b1c-32d2-4622-9103-af902ca53173">
+                <propertyInstance
+                  Id="adaf509a-283e-4026-8d70-49329e0498de"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="e042a06e-9cd5-4f25-b5d8-5238cf0bc4aa">
+            <interfaceMoniker
+              Id="c711f139-2a44-426d-9723-6166c3ab8535"
+              LastKnownName="ICloneable"
+              LastKnownLocation="Package2_1410.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="a28c1adc-4164-463c-bf4e-5f2e18c25457"
+            isDerived="false"
+            sourceEndRoleName="Node"
+            targetEndRoleName="Left"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="14f68960-47c1-45e2-a843-dbd8a3d8059e"
+              LastKnownName="Node"
+              LastKnownLocation="Package_1410.uml" />
+            <description>Property Left references type Node.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e5e68971-2fdc-41e5-83bc-577c1a6ad620"
+                  name="Node"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4b43f488-e9cc-43c3-ae70-c1c0a663492a"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="005263ef-8ea5-49c1-82c9-49ff294f6ef9"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="929c5606-faf9-494d-a5ca-1f069e496446"
+                  name="Left"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4555c38f-ea21-4ab6-a51b-1baab882d335"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="50101164-1810-4f18-8639-1f25136f484c"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="161892f5-ed35-450b-96e0-a3af40306ccd"
+            isDerived="false"
+            sourceEndRoleName="Node"
+            targetEndRoleName="Right"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="14f68960-47c1-45e2-a843-dbd8a3d8059e"
+              LastKnownName="Node"
+              LastKnownLocation="Package_1410.uml" />
+            <description>Property Right references type Node.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ebe590cc-4e7b-4ff0-bf3d-0a91632b1722"
+                  name="Node"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="56b28b53-6726-4305-b900-0d0a78d38456"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="df241f1b-74f7-41bc-a0b4-16e086f63b79"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a1968484-4ca4-41e1-98ef-967b507dfab5"
+                  name="Right"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f38b4259-07b2-45ea-b984-589c8bca0a3f"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="aa34f999-df7e-4024-a12d-2a1ff824cba1"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="80fce04a-256e-4c77-a481-80bcea26d5a4"
+            isDerived="false"
+            sourceEndRoleName="Node"
+            targetEndRoleName="Value"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="a36fb9a2-5725-4172-a8dc-6bdb4cc80578"
+              LastKnownName="IComparable"
+              LastKnownLocation="Package2_1410.uml" />
+            <description>Property Value references type IComparable.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="51e0f023-ab34-4f7b-8fd8-3d5bc918b994"
+                  name="Node"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="aa7202e4-2a5e-439d-b0c8-7d86ad72ff07"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="988c7d6b-e98c-4db0-b20c-e86cc9460572"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3de46e57-6d0b-47e4-bdbf-194b016b964f"
+                  name="Value"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1eb04c34-cf7d-4bbf-9438-4d6b1a824dca"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1c8749ad-b47d-4a2d-83b7-c18d551d6b63"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="9579de48-02ca-474f-a1fd-b247e7453313"
+            name="Left"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="606a147b-5adf-46d2-8786-3de439bca967"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode Member%3DLeft"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c3c96c4c-3324-456b-b70b-ce10a11e44d0"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c1bb8b8-5cc9-4322-abe4-9432ffddf7b2">
+                    <propertyInstance
+                      Id="c9adf583-b61a-4862-aae6-3aed63a75905"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4868a23-bed1-4539-bf0c-e6fe797a87a9">
+                    <propertyInstance
+                      Id="13e9aff6-b10c-4210-9c7b-31244a662afc"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="798fe979-8f51-4711-9f71-3f23ad35eb92">
+                    <propertyInstance
+                      Id="35acac80-56b1-4662-a8f5-6d031f07e2f0"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="940761f1-277e-4298-8c86-25b0a429cfbd">
+                    <propertyInstance
+                      Id="34486026-92d0-4ce7-a338-90a2010ddc7f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0fd0111a-543f-41d1-bb22-560a49959e97">
+                    <propertyInstance
+                      Id="48744a90-257b-4b57-b6b3-421cf2793883"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0e0e66a-2de9-4622-ba05-a4a75ad0938b">
+                    <propertyInstance
+                      Id="c38477b1-cd00-4725-ae1f-e2bb83ede417"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b789da2-ee3f-46d3-84e1-8b0e5a911098">
+                    <propertyInstance
+                      Id="04e4e685-3493-4a25-af09-f7275edea951"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="14f68960-47c1-45e2-a843-dbd8a3d8059e"
+                LastKnownName="Node"
+                LastKnownLocation="Package_1410.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f5b2e4cd-ea25-4df6-8ead-39b1fdf30f8b"
+            name="Right"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b5000bbe-880f-45ef-bf57-8cbced0abfac"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode Member%3DRight"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="82349d02-cc40-4236-9321-8455cb1ca84e"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d4f5848-e036-4254-b5a0-52ef97bd9739">
+                    <propertyInstance
+                      Id="1202273c-3407-479a-b9c6-e15b1e6579f5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e766efe1-d456-44c9-8a77-a1cd8d09a4c0">
+                    <propertyInstance
+                      Id="29e639b8-0142-4f4c-87ef-2bc380b9c842"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ddab5188-1020-4f7d-bc0f-2324ed92d9e0">
+                    <propertyInstance
+                      Id="aa22ffc8-02f1-4e97-b79c-e52d5a934b01"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f98bbe0-eca3-4008-b4b3-af720982af6f">
+                    <propertyInstance
+                      Id="16d52baa-d91c-45ff-8098-4731b9f6d8cc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c5d712b7-c0fe-4362-96fb-bb5fb78cbca7">
+                    <propertyInstance
+                      Id="88ff1382-4e00-4a6b-a095-e36cdd45cae7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5dad41f0-1ea4-4386-be3c-9e43b4aef68b">
+                    <propertyInstance
+                      Id="556c21a4-77f9-4e40-b10b-5a601284d34c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9951454e-784f-4caa-8784-81552041d50a">
+                    <propertyInstance
+                      Id="16514d52-4616-45d3-b383-42e2a2d76d7e"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="14f68960-47c1-45e2-a843-dbd8a3d8059e"
+                LastKnownName="Node"
+                LastKnownLocation="Package_1410.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e8500aeb-693e-44a9-932e-a672d0fde26a"
+            name="Value"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="baef8c6a-65f7-4e1c-a2fa-7713dc5b359d"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode Member%3DValue"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fc7b8744-2cd9-4956-a245-532ab212262a"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d97105e1-1fa1-430e-8f98-e93787f894f8">
+                    <propertyInstance
+                      Id="83f58d9d-b35d-4542-8640-75aa70efa049"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7e49786-8a6e-4ee1-9bd7-f9c9a0975eaa">
+                    <propertyInstance
+                      Id="bb758198-39e9-44f6-b8f7-9b41c5874b52"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a65b14a8-0576-439b-9870-98ee37a70ae3">
+                    <propertyInstance
+                      Id="eb8758f8-41a1-4ca7-99b8-24ef3bd8bc44"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="47c0a2c7-6f67-43a3-8bcb-d95a3c47bc95">
+                    <propertyInstance
+                      Id="edfd5097-7c26-4a37-a6c5-c130e0d388e2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="738951b6-bf61-4574-8e18-57f24a9cad7e">
+                    <propertyInstance
+                      Id="c1723ad3-fe3d-45b8-aa5e-bd8549d367dc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="633ba42b-527c-4139-86c2-fbe4ebc2a503">
+                    <propertyInstance
+                      Id="b6bd2b1c-8ecf-492a-9947-5ebf6b1a5fd6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85018a25-22ec-4664-bfc0-c1813f405c86">
+                    <propertyInstance
+                      Id="fbd8c0cc-a1e8-4586-8d6d-6f198867a53f"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="a36fb9a2-5725-4172-a8dc-6bdb4cc80578"
+                LastKnownName="IComparable"
+                LastKnownLocation="Package2_1410.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2d1887b0-1cc6-48bd-b9de-9e41a84e08a3"
+            name="data"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b0dc6b1f-709e-42eb-9789-ba9158ae455c"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode Member%3Ddata"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e221c80c-5c02-4f50-a9a2-d1f970fb070e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6e2a671-2910-4fa1-806d-14ea9cffe800">
+                    <propertyInstance
+                      Id="70013681-a5d6-4baf-b047-672c736a8e5a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53e26e0a-e6e6-49ba-9434-c15b9cf78e63">
+                    <propertyInstance
+                      Id="9f91f2c7-9529-47a1-a95a-306419d39166"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23c4c7b2-a5f7-4680-8a13-68952500c188">
+                    <propertyInstance
+                      Id="2bee7f6f-51ad-4092-87f0-af5bf34489f4"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb5a258b-bcc9-4a12-8d06-711995c64732">
+                    <propertyInstance
+                      Id="0631b65b-499d-4b72-800b-cecc9402e968"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f080b1b-3429-4187-af18-a7020d56d95b">
+                    <propertyInstance
+                      Id="a41e010c-aba7-4f80-a481-6405332d07ea"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="a36fb9a2-5725-4172-a8dc-6bdb4cc80578"
+                LastKnownName="IComparable"
+                LastKnownLocation="Package2_1410.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d66b9562-d423-4e83-87d6-594231980fad"
+            name="left"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="41f18527-f173-473c-8f65-65590b2876cb"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode Member%3Dleft"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="903f1b60-4afb-49df-b324-48351037e3aa"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8bc97c5a-a9d0-4a3f-90f9-26677a889e25">
+                    <propertyInstance
+                      Id="553fc1e8-8510-438c-9c0d-014a182e2794"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2563f03-0af2-4679-a4ad-5af816ab8a19">
+                    <propertyInstance
+                      Id="383bc2d4-87ea-4e91-b625-aded56554ca0"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b6b5c6d-36aa-4b71-974c-44e091121c53">
+                    <propertyInstance
+                      Id="ac6bc862-ff80-470d-bfd9-5862e6d4e093"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed180f13-66d0-40c0-af74-ceb1dc1eb874">
+                    <propertyInstance
+                      Id="30d4fe9d-3d67-4955-841d-a773cb36bdef"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d603227a-cd91-4303-be3d-9a2d7f22e3e0">
+                    <propertyInstance
+                      Id="c45fa575-1adc-4081-bb6e-4a20adc86d39"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="14f68960-47c1-45e2-a843-dbd8a3d8059e"
+                LastKnownName="Node"
+                LastKnownLocation="Package_1410.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="dd5787d2-e5b1-4294-b4bf-14e0cce37136"
+            name="right"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="faba5ba4-abf3-472f-88e2-ea0f6018ef4d"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode Member%3Dright"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="90717812-b159-4575-9810-9fbf7716a943"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="549ad9f7-b2cb-4f41-86e2-fd53bf3d09f9">
+                    <propertyInstance
+                      Id="1d6a4325-351e-499b-a9d3-390b75720c2c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1636403-4634-4d25-92c9-b10ab865fb84">
+                    <propertyInstance
+                      Id="a46735fe-803a-46cb-b5fc-f7fd1740dca6"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d76f1890-afe0-4ad2-a2ac-087cef4dcf1f">
+                    <propertyInstance
+                      Id="0ae610d3-5075-4234-a901-0b19445c6ad5"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02c3daf6-7654-4c55-b63b-d452f2fa7cc9">
+                    <propertyInstance
+                      Id="bf4c92a3-9e40-418a-882e-5c7cc05ac6bf"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20299b0f-ee3f-4304-aa32-6d93dea00e5a">
+                    <propertyInstance
+                      Id="d0c8b806-de4a-47ef-8ded-bf10edb94838"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="14f68960-47c1-45e2-a843-dbd8a3d8059e"
+                LastKnownName="Node"
+                LastKnownLocation="Package_1410.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="20503220-d4c3-4fdf-8d15-949d1a1ba48c"
+            name="Node"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="00179bcd-e1e8-4286-b55d-3187c6663f31"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DIComparable)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2591a20a-e414-45e1-9d8c-fe8e714777b7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="edbe95ba-eb5c-4d32-bb36-ad9b6318ab1a">
+                    <propertyInstance
+                      Id="e393498f-60ad-40fa-aff4-b930948bf8a2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7f139bb-fe83-4ea3-919e-985f894019f7">
+                    <propertyInstance
+                      Id="847520cf-6532-41f5-ba56-ea13f01b1c33"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="509995da-fc9d-4cf1-81c1-1991a70a6555">
+                    <propertyInstance
+                      Id="f58bf61c-ed11-4fed-a331-5f1d80d94356"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f8d3ba4-1fbf-4a26-9f3f-32b0a8b1a73a">
+                    <propertyInstance
+                      Id="ae678e87-8f6b-4fb3-ac5d-c3bf51fe7fe7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0246758b-37fb-41a9-8e1c-0f9d6bf3c8a2">
+                    <propertyInstance
+                      Id="6fd3e254-5b33-41a8-8c4a-439ffca2b029"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5841e2b-3077-4dbe-94c1-be3d6441849f">
+                    <propertyInstance
+                      Id="53a3631f-6b2c-4158-bf97-2733b6938c0e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="095f2b98-5f81-44e1-957b-9faa51ec08b1"
+                  name="data"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f6772f10-92fa-49b4-924a-c7ed722f6195"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DIComparable)]) ParameterIdentifier%3Ddata"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="a36fb9a2-5725-4172-a8dc-6bdb4cc80578"
+                      LastKnownName="IComparable"
+                      LastKnownLocation="Package2_1410.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0540cba9-96e1-4bdb-9f3c-8d717f1a4e61"
+            name="Node"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="28a902d5-e421-4853-ac64-a65453ec46bc"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DIComparable)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="24586ece-1a45-43ab-a056-995bc2c3f355"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="71931b70-4243-4e1b-a709-2285583418d8">
+                    <propertyInstance
+                      Id="c9d8f90e-4401-4a0d-884d-47c63833f042"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b65fdc53-4664-494e-8e81-bdc25f140459">
+                    <propertyInstance
+                      Id="2257dd60-c101-460c-a1fa-44a760e925c7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c13d141-aaeb-436e-8e79-dd028570cf1f">
+                    <propertyInstance
+                      Id="762792ca-91b9-4dca-8308-620b0c2d3f58"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ee1b7c8-1b8b-4f58-8460-452134b4324b">
+                    <propertyInstance
+                      Id="e2fcc2d1-bb7c-407a-a29f-84aa54340076"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7fff9d45-6e9e-4572-b6ac-565d748f7fc1">
+                    <propertyInstance
+                      Id="a2c2d035-7ff1-4327-ab5f-1406ea2f6e31"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec52647c-d988-450d-97a7-7a4f509a4cf9">
+                    <propertyInstance
+                      Id="3697521c-0d3d-4c53-a4ed-bb82892cffff"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6d729ec6-5ab7-4b44-b0d2-b7ea980367ad"
+                  name="data"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3bc3805b-a613-4c18-92e1-c20e39a0df62"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DIComparable)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)]) ParameterIdentifier%3Ddata"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="a36fb9a2-5725-4172-a8dc-6bdb4cc80578"
+                      LastKnownName="IComparable"
+                      LastKnownLocation="Package2_1410.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f1ec141f-afd8-4652-b7e1-f141e7621fae"
+                  name="left"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="726a2057-2856-4a97-ac61-fdbe047aaa79"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DIComparable)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)]) ParameterIdentifier%3Dleft"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="14f68960-47c1-45e2-a843-dbd8a3d8059e"
+                      LastKnownName="Node"
+                      LastKnownLocation="Package_1410.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a9a23024-549d-4400-8d7b-309cb7b32f2b"
+                  name="right"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d4ca5ac2-4e88-4fe5-b5ee-1ece81e09af6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DIComparable)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)]) ParameterIdentifier%3Dright"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="14f68960-47c1-45e2-a843-dbd8a3d8059e"
+                      LastKnownName="Node"
+                      LastKnownLocation="Package_1410.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="22124dbf-4c7a-41cd-bf7b-2d45b15b3f26"
+            name="Clone"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1e9f551d-9a93-4a44-9fe0-9e7da2e48a48"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode Member%3DClone"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="92d715c6-04c4-433e-9d0a-7ed8bafd3209"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40244d70-8587-474c-8b66-67afd5174034">
+                    <propertyInstance
+                      Id="d33b15f1-7bd5-4099-afdc-e52600f2495f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28ba1ba4-6c8b-4b4c-9384-900fce453ca2">
+                    <propertyInstance
+                      Id="1ab7be2b-6d82-4f06-8e87-dd42bc8760f1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e0da57bc-5470-40cf-8f8d-b356a07e75f5">
+                    <propertyInstance
+                      Id="b1bd9e76-7b05-4f7c-bd21-179365737169"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="62f15235-a336-487b-a2e2-21d5915643bb">
+                    <propertyInstance
+                      Id="46348002-8ba8-4e9a-a5bb-08724fd14e12"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bff06f80-b102-4f33-808c-2a37888aa233">
+                    <propertyInstance
+                      Id="29e25de5-82c4-4ddb-be60-ec959d22d3dc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef8910bb-5a30-4df7-9a90-9f831d1a8744">
+                    <propertyInstance
+                      Id="7332f7e3-04ba-4f4a-b9f8-354e524a3e5e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="01efd172-411b-4ac2-943e-f8566198457f"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6cfbc6fe-10f2-4b8b-a183-d57154500196"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1410.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="96b69de9-f232-4383-be5c-349063dacf46"
+            name="Node"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f76509d3-b047-4394-959a-9a2435a5a7ba"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f1a353f4-beac-46e4-b6bd-584b35d4f9fb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bcb34311-0591-4080-8344-65c14d710d7b">
+                    <propertyInstance
+                      Id="6b0b6303-3328-493d-b90d-50775a3104e2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6bacb4e7-c763-40a1-8987-95bf55149155">
+                    <propertyInstance
+                      Id="fe7b65bb-1158-4c89-b4c0-3844e689a3b8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="efa0b502-b15d-465e-8e2d-aa3a3b18793a">
+                    <propertyInstance
+                      Id="1be588ab-6126-484d-b742-99e11ab7edb1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1cf5ae7d-3d15-4d64-94e8-888bdf9e26bd">
+                    <propertyInstance
+                      Id="66960fa1-835e-4bae-829f-48c1df826592"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4889811d-76f5-43b0-8385-312768e3cc87">
+                    <propertyInstance
+                      Id="f7a56994-2e1f-4fed-91c8-a786d5763d14"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09a4661b-0ea7-46ba-8fb5-00d46ddc4ce4">
+                    <propertyInstance
+                      Id="2b59c41f-d190-4b27-bafc-0d57ff7a806b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="17c0dd62-1e4d-42c0-8f33-f0b01c583c14"
+        name="TraversalMethods"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="6d1daaf8-62e1-4002-976f-3d114b999a37"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DTraversalMethods"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="04c2ea2e-f73d-4e32-a6d2-2d656156bc49"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bf2581f5-a036-4e45-b8d7-5aa158d52a44">
+                <propertyInstance
+                  Id="82679fa0-bff1-4f20-a5ca-ab9d91feaf73"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="42a83490-8e4a-4d23-b7cf-7d77b853107c">
+                <propertyInstance
+                  Id="9f8664db-2b41-414d-aac2-cf6127afaeab"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5b509f81-2752-4613-bd04-c45ee65c1c67">
+                <propertyInstance
+                  Id="5590777c-10d5-48fc-8754-ff12fbf3c5cd"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="68edc546-179b-4596-b1a9-3cf1035d47c4"
+            name="Inorder">
+            <referencesInternal>
+              <reference
+                Id="f3d4994a-b234-4392-9efc-5306a9f7bce6"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DTraversalMethods Member%3DInorder"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="9e56081f-6d0c-4b52-abe9-d3994ae6d345"
+            name="Postorder">
+            <referencesInternal>
+              <reference
+                Id="cceef355-b612-483b-95f1-6cbe63d96d2c"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DTraversalMethods Member%3DPostorder"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="1a115fa9-38d1-4fa1-b11d-e72cf132f6fc"
+            name="Preorder">
+            <referencesInternal>
+              <reference
+                Id="82265008-1dbe-41b1-8096-2c3045802f67"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DTraversalMethods Member%3DPreorder"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d01375ed-0734-4a3a-89a7-2dcf01dc4ea3"
+        name="BST"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="00db5572-8913-4115-95d9-a7688c00ddaa"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c9b32968-21c3-4016-80e0-d1f9cf4011c8"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5fbbafa6-9bbf-4d86-b134-1ef990611242">
+                <propertyInstance
+                  Id="64264bc4-f197-4560-8cdb-284748539b0a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6f0f6d71-95c5-4aae-8171-c0935333b621">
+                <propertyInstance
+                  Id="ad33b60c-3894-4fe3-a177-6d12ab57913a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4ad6312e-ba10-414e-85cd-02a2dfb0bbdc">
+                <propertyInstance
+                  Id="aae410e5-4a66-4587-b9c1-e8541d09382f"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ca8b69ae-d51a-4723-bc7d-e49c7be2e709">
+                <propertyInstance
+                  Id="8a103404-b533-4428-8acf-179c0a85d134"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8ae35801-046a-4408-bade-3a3355bd1509">
+                <propertyInstance
+                  Id="9edd20c5-cdc9-47b6-9a83-02d3167ae043"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="a3502b58-9438-48c8-abf8-6911c564c1a8">
+            <interfaceMoniker
+              Id="6d2d734a-5fd7-4464-a82a-2a67adcdc563"
+              LastKnownName="IEnumerable"
+              LastKnownLocation="Package3_1410.uml" />
+          </interfaceRealization>
+          <interfaceRealization
+            Id="de7fea7d-778d-48aa-8351-8068e937478e">
+            <interfaceMoniker
+              Id="c711f139-2a44-426d-9723-6166c3ab8535"
+              LastKnownName="ICloneable"
+              LastKnownLocation="Package2_1410.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="c837728f-46ba-4c9c-9a38-506add95743b"
+            isDerived="false"
+            sourceEndRoleName="BST"
+            targetEndRoleName="Root"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="14f68960-47c1-45e2-a843-dbd8a3d8059e"
+              LastKnownName="Node"
+              LastKnownLocation="Package_1410.uml" />
+            <description>Property Root references type Node.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="de76b9d4-47cd-466d-878c-eb7dbb001f0b"
+                  name="BST"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="aaa15433-f8cd-4ec1-ab45-86720dd4bc4f"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8f3946e4-88e5-4ab4-bc31-8c6cb0fafbc9"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4211a4f9-de5a-40c8-a376-3a1a9c4a7ec9"
+                  name="Root"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="769bff0e-8348-4f7a-84db-fdedfd0e1a54"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="0971a823-4e7c-4b50-bbfe-844e2b01c46d"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e4e87c66-136a-46cb-8a86-1ea530254e6c"
+            isDerived="false"
+            sourceEndRoleName="BST"
+            targetEndRoleName="TraversalMethods"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="17c0dd62-1e4d-42c0-8f33-f0b01c583c14"
+              LastKnownName="TraversalMethods"
+              LastKnownLocation="Package_1410.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e84179df-1c80-43fd-83b7-43861f86b6f8"
+                  name="BST"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="813a7b28-c2a9-43bf-a350-7fa66642125f"
+                  name="TraversalMethods"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="2e909e56-bfeb-47b4-a57d-d1f7bcb8a264"
+            name="Count"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b9a48e68-fdbe-424c-8752-66ec67cc5cbd"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3DCount"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="df0e2a29-e441-4516-b2a7-043a27671b87"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db301665-be75-4699-8ee4-897908d42bee">
+                    <propertyInstance
+                      Id="cf35ce6e-5aff-4ad6-bfcc-6c16e5b241e0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="19608eef-fcf1-4b61-b51b-374a398aebeb">
+                    <propertyInstance
+                      Id="0b13cfb3-0ed1-4cb8-88b6-5bc2296956ca"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ab929b9-75c7-49ef-b6b1-8643533f818f">
+                    <propertyInstance
+                      Id="feec8ee0-e5bf-445e-ab28-59b1728ce642"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="71d513b2-75ca-4d58-8427-f5e9815d1089">
+                    <propertyInstance
+                      Id="30623341-345a-4080-a1b8-e3a54cc6c948"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f06c2a78-0916-4cac-955a-dec196e898f9">
+                    <propertyInstance
+                      Id="c9217acb-0c53-426b-ae37-fe0076784ace"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b956a781-7a1c-440b-ad58-bd92985930d3">
+                    <propertyInstance
+                      Id="717b13c5-d7e6-487f-b93d-6bd833505977"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e70ea3e8-5760-4e68-ba9d-aa4146197fa3">
+                    <propertyInstance
+                      Id="4da96c15-5009-42b1-9864-08c9b91c27e0"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="MorseTree.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="19c63966-2ab4-4c12-847a-e191505fbcbd"
+            name="Root"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c1d6340d-c204-4624-b3af-d90d7ec5dd26"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3DRoot"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="efb0ff9e-5fc7-4d7a-b532-df993afce219"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e879c388-ea83-44c6-9c98-5e47fa254821">
+                    <propertyInstance
+                      Id="acaf65be-91b7-4963-b7ca-0f2335298f6c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a22fc5b-068c-4e03-b1ea-aa29f87564b1">
+                    <propertyInstance
+                      Id="fdb5f5a6-653f-467b-87db-e9a8f3cd0cdd"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3055770a-8b6a-43a1-94f4-f6ac01ba40d0">
+                    <propertyInstance
+                      Id="c75c5651-e2b9-44d2-b60c-0cf4368bec05"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07b0d0a5-d628-4f61-967c-31f351de1f91">
+                    <propertyInstance
+                      Id="47251f81-db9b-4d61-94f5-394217ebb9c7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ac51175-75df-4156-821a-29fb783ca17d">
+                    <propertyInstance
+                      Id="5b3f397b-7b04-4b4a-a89c-00703fe9a7f4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d17356f5-cc4f-484d-b8e7-7875423dbe2f">
+                    <propertyInstance
+                      Id="8dd75c22-8ef7-48f0-bab0-4514d80a36a4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="da1a50a6-1c18-4af8-9a1d-f5f2def09daf">
+                    <propertyInstance
+                      Id="c5a19473-8e48-4a7c-b990-82a08d6cc0fc"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="14f68960-47c1-45e2-a843-dbd8a3d8059e"
+                LastKnownName="Node"
+                LastKnownLocation="Package_1410.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="72117a3f-5e3c-4d84-bcc1-dbd8d1d6e4b3"
+            name="count"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6372fadc-4e96-419c-9f8c-3007ee3cfbaa"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3Dcount"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c6504643-b6fa-4b61-9a95-82cf8b59ede4"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0706e27e-c55a-414a-9678-f64b5d12d369">
+                    <propertyInstance
+                      Id="f077c2cf-3c9c-4749-8275-2446154f67d7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2fa43a0-64be-4e4f-bdd5-684231c02e5a">
+                    <propertyInstance
+                      Id="be1fe1ea-81b1-4c89-85ac-30d81ffb956a"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c54a553-c816-4bf5-9437-5e12d044f689">
+                    <propertyInstance
+                      Id="ca4c3deb-d865-4226-9ab6-6bd0b4884530"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="026d3878-f538-4be7-8863-1264be3b0663">
+                    <propertyInstance
+                      Id="13788da1-c1e5-4574-bb8c-b1b63e492c28"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b839d17b-291a-43f6-9a61-046fc1ebef1d">
+                    <propertyInstance
+                      Id="2f253b26-fb13-46be-92ac-0a3317a6da44"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="MorseTree.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a51b75f4-43be-48de-92e5-443029021e2f"
+            name="root"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="af62e65d-8e19-4f85-ac86-575d1589bafd"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3Droot"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c6e49069-33db-46a1-9849-0323fb1d8682"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f3eb8b7-79d6-4baa-b398-a13d4028bba4">
+                    <propertyInstance
+                      Id="e9a7ac13-e5b4-4f96-a23f-2652ee126835"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c69c37f-14b8-4cc8-b955-1d705cfcf36c">
+                    <propertyInstance
+                      Id="7ab4c464-06eb-4281-89af-4a6909b8f8fd"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a1b4ed0-c96b-4558-840e-22e11cc35c10">
+                    <propertyInstance
+                      Id="d76930f2-2daa-4b68-99cb-66941d2ed914"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="47616c72-f99d-47f4-af00-5a03140ee0c2">
+                    <propertyInstance
+                      Id="7c68f932-c551-4af7-9d0c-5c596e000829"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5686f62d-96c3-4428-8f8c-210c6d0c0ed2">
+                    <propertyInstance
+                      Id="901eba9c-7d39-4be5-bf4f-ab33a5e485d1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="14f68960-47c1-45e2-a843-dbd8a3d8059e"
+                LastKnownName="Node"
+                LastKnownLocation="Package_1410.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="10b6e5ac-8185-4d54-8150-fd382c028fec"
+            name="Add"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="78f8729b-9d87-404a-bdc2-b861a2ab556c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DAdd OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DIComparable)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="05b75625-857c-4d46-a386-aea246dade9e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0dfc120e-25aa-4e13-8448-9735016f07b7">
+                    <propertyInstance
+                      Id="85ef777f-8de8-48fe-aafb-edc8c4f0fc9f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7d8f095-416b-44fa-9555-046cfd3f4444">
+                    <propertyInstance
+                      Id="db505646-4ae4-4fec-b7cd-86caad971057"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="deaa5181-f624-4608-804f-5d0a036636d7">
+                    <propertyInstance
+                      Id="507e8b18-d3aa-4c64-a203-cee29bfc25b8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="da597282-7a3f-472c-9f89-0776bac25b24">
+                    <propertyInstance
+                      Id="aac20417-b7f9-4c91-8a13-f0d441f1460b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5c7fb9d-c59c-4197-89f3-151ecab6b11f">
+                    <propertyInstance
+                      Id="82c69a67-e985-4efa-ba61-1c35054c995e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5aa4a3c8-2577-4fad-bd60-c531b21dd806">
+                    <propertyInstance
+                      Id="56eecb71-4fee-4afd-8ad6-7860b30279ea"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b17600f8-af9b-456d-8c37-81c948eb776c"
+                  name="data"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="fb4a02d6-8534-40cf-8bec-124d6066af20"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DAdd OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DIComparable)]) ParameterIdentifier%3Ddata"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="a36fb9a2-5725-4172-a8dc-6bdb4cc80578"
+                      LastKnownName="IComparable"
+                      LastKnownLocation="Package2_1410.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f57163f0-8653-423e-b0f7-4e700ac53e22"
+            name="Contains"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="93a6ca2a-73bb-4a3a-825c-49325d8f5460"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DContains OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DIComparable)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f6479739-d55a-4f04-912d-1d9d41195f1f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1976217f-5514-4886-83ea-42e8cdfbdcbc">
+                    <propertyInstance
+                      Id="624cd7ad-8722-4f56-acdc-7e3f52968436"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e26cb3f9-4ad3-4a33-82d1-756dcf7d5a04">
+                    <propertyInstance
+                      Id="b0b3beeb-9639-4418-9762-a0c956c97703"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="017389ea-40d0-4802-afe0-76f6f8636f9e">
+                    <propertyInstance
+                      Id="fce00cc0-7f99-4fc8-919b-18cc3efd9362"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4911b0ff-3100-48e0-a3f9-76033c30bd0a">
+                    <propertyInstance
+                      Id="128a768c-c15e-4c03-9df7-4baafa4fdf7a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b10b119-e09b-4a46-87d4-b2b18d9da414">
+                    <propertyInstance
+                      Id="13b84021-f099-4643-86bb-bfb740788144"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db6d6cfe-3ac5-4400-ba99-43fdde90b499">
+                    <propertyInstance
+                      Id="1ffb9451-72f9-4800-a502-bdd83b2eb350"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="63859bf7-b046-4e6d-bdea-b74344915af7"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="MorseTree.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="01c02abf-37e9-417a-9356-b7afa43d4513"
+                  name="data"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8949ba05-25e9-4004-ba5f-589b01d23d28"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DContains OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DIComparable)]) ParameterIdentifier%3Ddata"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="a36fb9a2-5725-4172-a8dc-6bdb4cc80578"
+                      LastKnownName="IComparable"
+                      LastKnownLocation="Package2_1410.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ab7bad75-1479-4c06-b36d-a304e12e0c84"
+            name="Delete"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0b83d743-d86e-463a-afd6-37cd9c6e42d3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DDelete OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DIComparable)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="75502a17-523c-4c8a-ad84-fc200e282cc4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a27ed034-b5b7-4700-adec-570e6e6b02ea">
+                    <propertyInstance
+                      Id="e89a038e-338a-4062-87d2-2b7f90363c73"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eee1c07e-b94d-4ef1-9bde-afc42b83906d">
+                    <propertyInstance
+                      Id="15801e85-8c52-49dc-b480-985b905f7460"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e77e6a7-561b-42f7-bea4-0de9b1409bea">
+                    <propertyInstance
+                      Id="daf5d83e-6473-4938-9e22-1686ebe2473d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e43580b-f965-423d-9318-6fd9c3d9dc2c">
+                    <propertyInstance
+                      Id="f9d8bf6e-1eb7-441a-af16-8c65a14d6c4c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ba1c12f-0edb-4407-ad7d-4cfbe0272380">
+                    <propertyInstance
+                      Id="d5f6f63c-5fdb-4d26-b91f-d2789215489c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33a85f4b-4f8b-44d8-b0cd-f09b5ecb352d">
+                    <propertyInstance
+                      Id="87050804-d6a2-459f-972a-d30d1b457340"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5ea6ca71-25ec-4ebc-b681-5e410d75452a"
+                  name="data"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="57ea13bc-f449-4a1d-ab03-efcabada1219"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DDelete OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DIComparable)]) ParameterIdentifier%3Ddata"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="a36fb9a2-5725-4172-a8dc-6bdb4cc80578"
+                      LastKnownName="IComparable"
+                      LastKnownLocation="Package2_1410.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="366e64c1-e20d-49ad-8040-d1a5d49c6f5c"
+            name="InorderTraversal"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="86395f50-a761-4d7b-b8ee-5e903099b82e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DInorderTraversal OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="32cd4212-2cc6-4b6b-a78f-1f692b16765a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c5236ce4-a39b-423d-a71c-a828bdc02150">
+                    <propertyInstance
+                      Id="d83351e5-9641-4ae8-a692-aed0cb4134cc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c14da547-5405-49ed-b660-decf5fc44a95">
+                    <propertyInstance
+                      Id="8e00b1a7-0efc-472b-b560-2650865d33c8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="389c1a76-a950-47b6-9768-647d1e4a8bdb">
+                    <propertyInstance
+                      Id="6c7c0ef5-2009-4a6c-aba7-11bfd5f3ee54"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c82b19c-bec8-44d7-b88a-ab6930536ad2">
+                    <propertyInstance
+                      Id="68bbba01-e9a3-4611-ae24-c9c518aedd01"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="42eebf33-816c-4458-87c4-611eef3492db">
+                    <propertyInstance
+                      Id="c92679fa-5b46-4f81-b452-fe98df2a2dd7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="200ffc84-4de5-4808-b40b-50946795e65d">
+                    <propertyInstance
+                      Id="a3afea8a-865d-47dc-87ca-301b90a41c54"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2a306d7b-deca-4f5a-a6b5-6f45ed61ffdc"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MorseTree.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5643d3b7-c235-475b-80d9-b5c6282332dd"
+                  name="current"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="61e56f87-c481-44ce-86e1-b1f562862916"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DInorderTraversal OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dcurrent"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="14f68960-47c1-45e2-a843-dbd8a3d8059e"
+                      LastKnownName="Node"
+                      LastKnownLocation="Package_1410.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d23bd167-ecf3-4f62-b53d-8804ca64e7df"
+                  name="separator"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="16f95f7a-2c6e-460c-87b1-0717f3c9cc0a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DInorderTraversal OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dseparator"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MorseTree.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f064627b-97ea-491f-8b60-ec6509d1475d"
+            name="InorderTraversalBuildup"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f331237c-6fba-4711-a3b6-ebd4123e04eb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DInorderTraversalBuildup OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem.Collections Type%3DArrayList)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="102ce601-513f-46e5-8bb3-4f5aef19c1f7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a273413-e998-4f1b-99b8-9f4e9f9fb872">
+                    <propertyInstance
+                      Id="ec561de6-eff3-47d5-97f1-b04718c8d583"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d7d8e4d6-1492-4d44-9a06-bf405b12eeb2">
+                    <propertyInstance
+                      Id="80a2d264-bdaf-40d3-8c69-9e74edeb4612"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8c69e2f-5955-421a-8bc6-f284bc9982a2">
+                    <propertyInstance
+                      Id="92ba0c19-eacd-44d8-917f-a5b0f9286c73"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34b0e096-7167-45c1-9c02-ffafb43e11ea">
+                    <propertyInstance
+                      Id="54838d4f-d43a-401d-a1b7-9f602a715adb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12650c37-1a4c-49ea-a1b5-30f9a8c767a4">
+                    <propertyInstance
+                      Id="79cc97de-a8ce-4924-84f8-f7216bf726aa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe60566e-dd21-47fd-96be-cffdf41e97cb">
+                    <propertyInstance
+                      Id="53689890-9b8a-4e01-b987-f12b79003b66"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c86f1928-aba6-4adf-b0e2-7b78755923da"
+                  name="current"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="555b7af9-6e0c-46e5-b33e-5e73c9d75864"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DInorderTraversalBuildup OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem.Collections Type%3DArrayList)]) ParameterIdentifier%3Dcurrent"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="14f68960-47c1-45e2-a843-dbd8a3d8059e"
+                      LastKnownName="Node"
+                      LastKnownLocation="Package_1410.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fe0cafe3-8d76-4f8b-8aca-78faee737c6f"
+                  name="contents"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5f07e97a-bc9e-420c-bc3b-5b71b4ba9b78"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DInorderTraversalBuildup OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem.Collections Type%3DArrayList)]) ParameterIdentifier%3Dcontents"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="abed488c-743f-4067-8d54-8c40c596d44d"
+                      LastKnownName="ArrayList"
+                      LastKnownLocation="Package3_1410.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2340f83c-7c5b-4715-adb3-8572f0f8489f"
+            name="PostorderTraversal"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="dd9a3e3a-a0b3-4f31-ad10-8e02a6cd6301"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DPostorderTraversal OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f298d1dd-1c7f-4aea-83d1-a7cf7d1507c9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4450bc2c-c564-4898-a5f7-b36ddfa3ceb0">
+                    <propertyInstance
+                      Id="5e88c466-cd7b-4a53-bf8b-18398259cbd9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="334eafb8-1316-4807-aeb7-815c4f05bdc5">
+                    <propertyInstance
+                      Id="56516171-6848-48a4-9a3f-43795d149d9c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48970b8b-1c74-45f8-a332-3d14c928fb44">
+                    <propertyInstance
+                      Id="1bd62c7b-3dda-495f-88f3-67dd9a72f0a3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21cd72e1-6a6b-4199-be98-4a0bc80f127f">
+                    <propertyInstance
+                      Id="e36ad3cc-6252-4cfe-bd44-99d15ba98b08"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ba12b7e-11ba-4f63-b403-2db03d0bfdd2">
+                    <propertyInstance
+                      Id="f632b51b-0a14-4736-b734-a846f2f7e530"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8daa9c7-72c0-4576-9b0d-61358370e279">
+                    <propertyInstance
+                      Id="909f286b-7ed2-448d-84fc-4db84e7cffd3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="549c0b68-2504-46f2-9e5e-75e9377b433f"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MorseTree.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2f8ed26f-ecb2-45b1-b1ac-0aa233da7b74"
+                  name="current"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b6717c68-7bbf-405b-baab-ac94c24e01d5"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DPostorderTraversal OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dcurrent"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="14f68960-47c1-45e2-a843-dbd8a3d8059e"
+                      LastKnownName="Node"
+                      LastKnownLocation="Package_1410.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c213311b-6b00-4fed-aa99-2e81ec3dc02e"
+                  name="separator"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e3a6dfb9-b9ce-4f8d-8df5-7d82e0f27081"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DPostorderTraversal OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dseparator"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MorseTree.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4ba1c3b4-6118-45da-ae5f-5c89c5d854ee"
+            name="PreorderTraversal"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="14531d6e-c458-4e54-b9d6-7182287d3521"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DPreorderTraversal OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4c8dd839-6e3e-4a43-835f-ceb02e835c97"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec20e406-a61b-4283-91ac-c1b4adb45238">
+                    <propertyInstance
+                      Id="ce9b704c-8675-4eb7-840d-d423e5f83988"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="97e87bf4-0803-414e-ac55-21fc8da9b39b">
+                    <propertyInstance
+                      Id="1b262e9c-16d8-4505-9c0b-b191aeb8ee79"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c764f97d-5509-455e-b3c5-00938e55fa9c">
+                    <propertyInstance
+                      Id="c1bb1e24-d6b2-42af-b9d2-895736078a53"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d6e4b74b-da47-4c42-88c9-8d8cf0ef0e4a">
+                    <propertyInstance
+                      Id="e7d6961b-d6a3-440f-a8ff-1d1106816682"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36e641fb-191b-4a86-bd16-68ce71e4d0d7">
+                    <propertyInstance
+                      Id="94bb51cb-1bb4-4583-96da-8302e08c2d18"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44ab3903-7809-4dad-9fb0-cb2620d43dde">
+                    <propertyInstance
+                      Id="09e256b0-656c-4f4f-bb6d-30bdce16fedd"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="33a2831f-28b3-4932-9ca4-65d1314fa966"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MorseTree.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4b31311b-8a55-4f14-aeeb-fc06814b8f79"
+                  name="current"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="69aa02b7-85b9-4d0a-a6b9-49d1bd33d5fd"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DPreorderTraversal OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dcurrent"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="14f68960-47c1-45e2-a843-dbd8a3d8059e"
+                      LastKnownName="Node"
+                      LastKnownLocation="Package_1410.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7c871f08-fc93-48e0-9af9-f2d91d403bd3"
+                  name="separator"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="906a5a35-947c-4edf-ae6e-05ffc24d2a24"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DPreorderTraversal OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dseparator"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MorseTree.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="077984f6-8892-48d6-9c62-1e0518a51dc4"
+            name="Search"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ec347d6f-c248-4d2a-a811-459a4cead32c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DSearch OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DIComparable)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="94303982-10eb-47ae-9b2e-cc4de75033ae"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c062b7b0-765f-4a72-b3f1-181de04bb95d">
+                    <propertyInstance
+                      Id="07c49418-3773-43f4-b325-a49dc782428a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7aa33473-54e4-4837-b268-00fb6bafa33a">
+                    <propertyInstance
+                      Id="f4d971d8-3729-4e1c-8f0d-762925db99ab"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a62b4ea-1259-4ba0-9ed3-025bb22a5174">
+                    <propertyInstance
+                      Id="15399919-f069-45e5-9b18-c4bd038ce07a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ff5996c-50e9-43eb-82fc-b7b0280999b9">
+                    <propertyInstance
+                      Id="71a3625d-d6b3-471c-bb75-c3500155bfc4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eda0ca3f-3eca-4b48-9445-5df44dcf884d">
+                    <propertyInstance
+                      Id="713b39a5-834c-4669-a49b-659c71ae684f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="648e9cc7-7588-49ae-a55c-d950a2486ffc">
+                    <propertyInstance
+                      Id="da92aff4-421a-42d1-bfd4-8ad4ce3abe49"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9c8369ca-98a0-4844-aae6-6b92b2f1df8c"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="14f68960-47c1-45e2-a843-dbd8a3d8059e"
+                      LastKnownName="Node"
+                      LastKnownLocation="Package_1410.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8c11dce3-a2fb-491f-a5b2-016e2dfaf580"
+                  name="data"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f76229af-6ce4-4305-987b-cd43118234e5"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DSearch OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DIComparable)]) ParameterIdentifier%3Ddata"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="a36fb9a2-5725-4172-a8dc-6bdb4cc80578"
+                      LastKnownName="IComparable"
+                      LastKnownLocation="Package2_1410.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c374808b-7a61-4c98-be58-c2e71a148caa"
+            name="SearchHelper"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6a1c982f-cf44-484f-b80c-397e2121f1c9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DSearchHelper OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DIComparable)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c9485639-8491-4a9b-8cdc-d55d27d5963f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08c9dcc5-d0bc-4169-9f1f-e8ab35cf7446">
+                    <propertyInstance
+                      Id="8881c893-cf50-4506-a9f9-64bda2ad42de"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f5110b0-c68e-4d8d-8df4-604d9b319f3f">
+                    <propertyInstance
+                      Id="5d604134-9a94-456b-a34a-6b9148e320ba"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="927887b5-a05b-44de-8be7-2d4e9cc5caf8">
+                    <propertyInstance
+                      Id="e8b27be9-d87c-45e7-9d18-a9223e721353"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="539762ea-e1e6-4a54-8a4e-7ff81c6b5bdf">
+                    <propertyInstance
+                      Id="4c93a13b-c4f1-4bca-b273-4ebf1ddab9eb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9fd111a-e27f-44a1-94e0-076935f9e415">
+                    <propertyInstance
+                      Id="0fff67dd-2327-456c-9ea2-2a38c0c4c4f1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1359474f-75af-4961-a4c7-7ab22140b1d3">
+                    <propertyInstance
+                      Id="6f0712e4-364e-493f-b6bd-741239d4a828"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9a5deb62-e5b2-4113-aba3-bfe208fbcb9d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="14f68960-47c1-45e2-a843-dbd8a3d8059e"
+                      LastKnownName="Node"
+                      LastKnownLocation="Package_1410.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="becba1bf-9baa-4ccf-83b4-f0ddfe66c13c"
+                  name="current"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4342bca6-7758-47d4-8b2b-cd93af665625"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DSearchHelper OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DIComparable)]) ParameterIdentifier%3Dcurrent"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="14f68960-47c1-45e2-a843-dbd8a3d8059e"
+                      LastKnownName="Node"
+                      LastKnownLocation="Package_1410.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="80e3d4b5-dda2-42c5-8acc-1b8aa6d49ae9"
+                  name="data"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="48a6d797-9cd1-401f-a891-683ab90572c3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DSearchHelper OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DNode)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DIComparable)]) ParameterIdentifier%3Ddata"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="a36fb9a2-5725-4172-a8dc-6bdb4cc80578"
+                      LastKnownName="IComparable"
+                      LastKnownLocation="Package2_1410.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="11d08457-5f47-40a1-a3dd-33c165ee70c6"
+            name="ToString"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="aba1fe7e-7857-4f09-9651-035eba1e4a80"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DToString OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DTraversalMethods)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1e747498-0dba-47d2-b864-3cc8abc2b67c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2b949f1-4bc4-4fe7-95a4-0c2a55800e10">
+                    <propertyInstance
+                      Id="49b25cab-7782-4510-a018-274e78bf9606"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0cd479c-54ae-450f-b98f-79d24014ad0d">
+                    <propertyInstance
+                      Id="43f255d7-dbf8-4182-b1bb-d4e942e0d15f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc6e65ad-76bb-492a-9a52-7d2464496394">
+                    <propertyInstance
+                      Id="f5297a8f-89e5-4d5c-a83e-c692d784d926"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2575fc0a-1804-4cb2-8c3e-61f3c1a0014e">
+                    <propertyInstance
+                      Id="83e9b109-ffcd-4cb1-94cc-677c7f92a8b3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8fc2921-7b60-4f48-b6ec-056397254511">
+                    <propertyInstance
+                      Id="425eaeed-6cbe-4fe1-98bb-d74ff188a9b7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11bad905-1484-4d64-9346-126a260de32c">
+                    <propertyInstance
+                      Id="56690231-ee0e-4327-a130-127b456e3845"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a1387156-b02e-4ca1-ba2b-9ff5cf424a86"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MorseTree.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4aa7e547-ed43-4bd9-93b2-89bc3597c3f2"
+                  name="traversalMethod"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="bfce1757-b5af-46f0-97b1-7a1c9f32d2be"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DToString OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DTraversalMethods)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DtraversalMethod"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="17c0dd62-1e4d-42c0-8f33-f0b01c583c14"
+                      LastKnownName="TraversalMethods"
+                      LastKnownLocation="Package_1410.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="66bac1ff-ad00-4f71-a4b4-11528650893e"
+                  name="separator"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f0929ba8-00aa-4d80-906f-ddf460efbaff"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DToString OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DTraversalMethods)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FWindows%2FMicrosoft.NET%2FFramework%2Fv2.0.50727%2Fmscorlib.dll Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dseparator"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MorseTree.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fb2b3d82-3d69-44f2-8550-eb3fd39f9ba0"
+            name="ToString"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="77111445-ed82-4018-a407-4791d9879dd5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DToString OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DTraversalMethods)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7b11dd5b-8ae2-45a3-8c54-566cc8cb4e4d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d504a338-27d6-4e15-b4b6-41355542ee3d">
+                    <propertyInstance
+                      Id="95161b8a-0da4-4c7a-a1e9-3848a7392ef5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33cfaf46-71d7-422e-9c50-8a33b0a6db45">
+                    <propertyInstance
+                      Id="d0cc1d70-aa28-480a-b76f-67471a2b757e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca0d1a9f-1759-440e-bf30-b36825e10838">
+                    <propertyInstance
+                      Id="bbdef5aa-2fb8-434a-96a2-6e370d386aaa"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f49b7bc-c285-4cf2-bd6c-35ef873abd92">
+                    <propertyInstance
+                      Id="4020ab0d-fccc-440a-9537-e01bd821b961"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08d84186-af10-4388-85cf-f62abf35faa3">
+                    <propertyInstance
+                      Id="70118a5a-f078-43e6-a78c-8b8ebef3d709"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="115fbb2f-f761-4f48-9825-a0824134a3e1">
+                    <propertyInstance
+                      Id="3c4a6dd5-89e6-4c66-8c5d-447d2e658832"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="aa4657de-3594-43f4-be89-5e7542bb1eaf"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MorseTree.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4843e81e-84ef-4352-bbc0-8028cfb1016e"
+                  name="traversalMethod"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="99767b9b-7a85-43a2-b197-6c3af3776f06"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D(Name%3DToString OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DTraversalMethods)]) ParameterIdentifier%3DtraversalMethod"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="17c0dd62-1e4d-42c0-8f33-f0b01c583c14"
+                      LastKnownName="TraversalMethods"
+                      LastKnownLocation="Package_1410.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e58a5c83-bd3c-4843-ba72-05e96c5bc774"
+            name="Clear"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0232338e-fd9f-44f2-b266-caedd1b0171e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3DClear"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e91f951a-7974-4e05-a72a-cb3380a10c37"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f76f7ec4-cec7-416c-8e6c-dd906e9a34be">
+                    <propertyInstance
+                      Id="441442f6-9283-45f7-a976-01faa5959c57"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d35dc6b7-2f93-4c8c-afe4-a275df462767">
+                    <propertyInstance
+                      Id="4efa1167-ac0a-498e-96bc-3f7eaa92b35a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6126012b-c81e-4757-86c1-685bb4cfb255">
+                    <propertyInstance
+                      Id="dbefec4f-95f2-4ccc-970c-050a0e912376"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2632960-784b-4c61-bb6e-cd3c3ba2cd36">
+                    <propertyInstance
+                      Id="d15e421e-b845-454e-9384-31ca392fb0c1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5c9a77a-b11f-4cd8-ba58-e7550e6c0559">
+                    <propertyInstance
+                      Id="4914967f-ecfe-491e-ab69-ec396c90606d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91bc1267-fc98-4009-aa94-6009085dfd5d">
+                    <propertyInstance
+                      Id="d08cd0a5-f4dc-4bd3-a13a-7efe9e6d6cb6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="4c17253e-d66a-4e3f-be6c-e04520501816"
+            name="Clone"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3d62d3cc-a531-4f53-ac0b-9c596406634a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3DClone"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4b253f82-e58c-431a-8ef4-6517a7871e7f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="512de589-0b77-4c61-9fa9-c4fc3107923d">
+                    <propertyInstance
+                      Id="9344efea-daf6-4700-bdf5-40979bc59c93"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="014d6d64-b105-406f-8f3c-38df377ca062">
+                    <propertyInstance
+                      Id="264ca8c5-c18a-4e3c-b6bc-c5017929d3dd"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e6814fd-147c-4dca-a361-77edfa04e02c">
+                    <propertyInstance
+                      Id="084168ea-f2de-4ed9-84d2-50aa64d4285b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49fc4073-4571-45f0-892b-88e673dec8be">
+                    <propertyInstance
+                      Id="8f0ce6b7-6c58-40c6-9392-04a551017fb5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10d1364d-c2a9-4572-ab1d-59eb0b759f98">
+                    <propertyInstance
+                      Id="c2be3d2b-f3cc-4a98-ab20-239538f6e9fa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b3fa198-9d6a-46b9-935e-f8991ea01c61">
+                    <propertyInstance
+                      Id="430e4f17-c661-413b-8839-c6a5caff624e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="537d2980-d488-49c3-8ac1-974540edd9be"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6cfbc6fe-10f2-4b8b-a183-d57154500196"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1410.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="34073a97-2c9c-4470-8e55-3505fb20d825"
+            name="GetEnumerator"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7230cf3e-9646-4b23-8577-e6d32c53b99b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3DGetEnumerator"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ed29e0f6-7c8a-483b-9641-749674e01163"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a034772-fae5-44dc-b164-39fcc5e53491">
+                    <propertyInstance
+                      Id="f07f5065-321b-40ac-9245-62c227bd3408"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ec8e0fd-0576-4728-8745-fa3f934fd233">
+                    <propertyInstance
+                      Id="7f24e9c0-9495-48bc-b28b-814816cc9a89"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="452f9d66-07b9-4b88-9411-f3d814b486dc">
+                    <propertyInstance
+                      Id="7b617a97-20f4-4979-ba60-f4bfdbb70b02"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63bfd805-bfad-4e88-be15-8f263b6223b6">
+                    <propertyInstance
+                      Id="03d4c194-4b22-476b-a519-4fba8bc331a4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b01076b-6655-46eb-a1c7-c70eb2780847">
+                    <propertyInstance
+                      Id="4b50f0ef-bc65-43b4-a9d1-b2cdcaf8f7a3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="601fd717-f84f-4ee5-9cfc-2f45a770dc9f">
+                    <propertyInstance
+                      Id="7738d64f-21a7-4195-a453-b67afa82bfd6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5c3fd5aa-12cc-484b-9ea3-dc4052e9f7b6"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="15837c87-9681-4a2b-8b03-d92236b51b39"
+                      LastKnownName="IEnumerator"
+                      LastKnownLocation="Package3_1410.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="15c4ebaa-f4d5-435a-97a3-005182e75bf7"
+            name="ToString"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="61b43299-48c7-4ca6-9bf0-9802ea1d0cc2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3DToString"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="eb6785f1-4166-4fff-856b-e998d3fbbfa0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84867073-531f-4dd6-ab3c-546cdd71f9de">
+                    <propertyInstance
+                      Id="f66da4aa-6d66-4f39-b398-a425a351e0e1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84a40a4a-e4d0-4cce-8662-cfbd2493eb09">
+                    <propertyInstance
+                      Id="f81ce733-8ee2-4713-9e82-8df641471996"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e72f51f-3f5b-4b40-b1de-cb5b061ad1a7">
+                    <propertyInstance
+                      Id="1725d29b-f0b3-4901-b1da-eb12c4cda0a8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="debfe760-7f85-4cff-9449-3e9ab7338c6e">
+                    <propertyInstance
+                      Id="01c3222d-83e7-4905-942d-5a8f23c93554"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb7cda4a-9e8f-4b26-ba73-191b8c9ed623">
+                    <propertyInstance
+                      Id="2b7f8b13-5f4a-40ae-aebe-9268233c96a1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b34b62c-0861-4f7c-84a2-f548c2c8ad02">
+                    <propertyInstance
+                      Id="d44efdd1-05fc-4452-9e33-ba388bd7a649"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6fa763f4-8051-446e-81f6-85bd8d7b0bb9"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MorseTree.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="272dc5a2-ba76-4d20-b7b3-4a3e5687db94"
+            name="BST"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0737e0be-a957-4622-952d-ccf1c1f55688"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FLocalStorage%2FUMKC%2FCS 303 Data Structures%2FHazlewoodClark_CS303_Project_02%2FFromMSDN%2Fbin%2FDebug%2FFromMSDN.exe&quot; Namespace%3DskmDataStructures Type%3DBST Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b419ac6a-53c8-4aaa-a3c7-2c1cbdd872e9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d90bb46-4f19-4b4b-8cb2-f303123e3e90">
+                    <propertyInstance
+                      Id="acfc6f88-adca-4f16-9a08-11882c21346f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd2c51f8-4f48-4387-be63-c399db4166cf">
+                    <propertyInstance
+                      Id="01468359-20e3-4f05-bd4b-42cf88291003"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="539c5103-5b3d-44d3-9353-3fa962a8d034">
+                    <propertyInstance
+                      Id="37ce308e-2ae1-4879-ac30-aa3c234aedfa"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b71206ca-209e-4fe0-a4d8-32d164f3d7ae">
+                    <propertyInstance
+                      Id="ec42d689-8667-4f31-92cb-8e21bf676030"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a529372-4c9c-4310-b143-7366815c3c72">
+                    <propertyInstance
+                      Id="0e3b1ff5-79c3-4769-b7d0-06680b885de5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f469b763-d1ca-4a9b-a80f-fdc01f4b6919">
+                    <propertyInstance
+                      Id="11c41c6e-df50-48fe-a809-f6e0b14d3079"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

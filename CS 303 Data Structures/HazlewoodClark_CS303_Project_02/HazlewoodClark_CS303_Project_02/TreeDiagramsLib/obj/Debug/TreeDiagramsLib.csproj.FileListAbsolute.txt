@@ -1,0 +1,5 @@
+C:\LocalStorage\UMKC\CS 303 Data Structures\Project 02\HazlewoodClark_CS303_Project_02\TreeDiagramsLib\obj\Debug\TreeDiagramsLib.csprojResolveAssemblyReference.cache
+C:\LocalStorage\UMKC\CS 303 Data Structures\Project 02\HazlewoodClark_CS303_Project_02\TreeDiagramsLib\bin\Debug\TreeDiagramsLib.dll
+C:\LocalStorage\UMKC\CS 303 Data Structures\Project 02\HazlewoodClark_CS303_Project_02\TreeDiagramsLib\bin\Debug\TreeDiagramsLib.pdb
+C:\LocalStorage\UMKC\CS 303 Data Structures\Project 02\HazlewoodClark_CS303_Project_02\TreeDiagramsLib\obj\Debug\TreeDiagramsLib.dll
+C:\LocalStorage\UMKC\CS 303 Data Structures\Project 02\HazlewoodClark_CS303_Project_02\TreeDiagramsLib\obj\Debug\TreeDiagramsLib.pdb
