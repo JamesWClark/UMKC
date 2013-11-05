@@ -1,0 +1,5 @@
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 07\Assignment 07\obj\Debug\Assignment 07.csprojResolveAssemblyReference.cache
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 07\Assignment 07\bin\Debug\Assignment 07.exe
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 07\Assignment 07\bin\Debug\Assignment 07.pdb
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 07\Assignment 07\obj\Debug\Assignment 07.exe
+C:\LocalStorage\UMKC\CS 303 Data Structures\Assignment 07\Assignment 07\obj\Debug\Assignment 07.pdb
