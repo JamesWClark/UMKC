@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Heap.cs" />
+    <Compile Include="HuffmanTree.cs" />
     <Compile Include="p1p496\Person.cs" />
     <Compile Include="p1p496\PersonComparer.cs" />
     <Compile Include="Program.cs" />
