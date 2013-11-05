@@ -3,8 +3,8 @@ using System.Collections;
 
 class PersonComparer : IComparer {
     public int Compare(Object x, Object y) {
-        Person a = (Person)x;
-        Person b = (Person)y;
+        Person a = x as Person;
+        Person b = y as Person;
         if (a.Dependents < b.Dependents) {
             return -1;
         } else if (a.Dependents == b.Dependents) {
