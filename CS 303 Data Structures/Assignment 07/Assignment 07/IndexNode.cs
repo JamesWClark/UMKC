@@ -2,9 +2,10 @@
 using skmDataStructures;
 
 namespace Assignment_07 {
-    class IndexNode : Node {
+    class IndexNode : Node, IComparable {
         public string Word { get; set; }
         public int Count { get; set; }
+        
         public IndexNode() {
             this.Count = 0;
         }

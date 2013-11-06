@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using skmDataStructures;
 
 namespace Assignment_07 {
@@ -6,24 +7,26 @@ namespace Assignment_07 {
         static void Main(string[] args) {
             HuffmanTree<string> tree = new HuffmanTree<string>();
             BST index = new BST();
-            string rhyme = "Jack, be nimble, Jack, be quick, Jack, jump over the candlestick. "
-                + "Jack jumped high. Jack jumped low. Jack jumped over and burned his toe.";
-            //all the same charactes used in the tokenizer of the index algorithm in lecture 17 - heaps
+            
+            //string rhyme = "Jack, be nimble, Jack, be quick, Jack, jump over the candlestick. Jack jumped high. Jack jumped low. Jack jumped over and burned his toe.";
+            
+            Dictionary<string,long> codes = new Dictionary<string,long>();
+            codes.Add("Jack", 0);
+            codes.Add("jumped", 10);
+            codes.Add("over", 110);
+            codes.Add("be", 1110);
+            codes.Add("nimble", 11110);
+            codes.Add("quick", 111110);
+            codes.Add("jumped", 1111110);
+            codes.Add("the", 11111110);
+            codes.Add("candlestick", 111111110);
+            codes.Add("high", 1111111110);
+            codes.Add("low", 11111111110);
+            codes.Add("and", 111111111110);
+            codes.Add("burned", 1111111111110);
+            codes.Add("toe", 11111111111110);
+            codes.Add("his", 111111111111110);
 
-            string[] split = rhyme.Split(" ,.:-!?/%\'\"".ToCharArray());
-            foreach (string s in split) {
-                Node node = index.Search(s);
-                if (node != null) {
-                    //(IndexNode)node.
-                }
-            }
-            //the first thing to do is build a table of words and frequencies
-            //should be index of word counts
-
-
-            //then, construct a huffman tree
-
-            //encode and decode the rhyme
         }
         static void DoHeap() {
             Heap<Person> heap = new Heap<Person>();
